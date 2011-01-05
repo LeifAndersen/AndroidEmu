@@ -1,0 +1,12 @@
+The following is the source code for various emulators on Android
+as downloaded from here:
+http://sourceforge.net/projects/androidemu/
+    
+I'm assuming that being part of sourceforge, they are complying with the
+SourceForge TOS.
+
+I have not managed to get it to compile yet, and I don't even know if all of
+the source code has been provided.
+    
+I also found out about it from here:
+http://code.google.com/p/androidgens/
