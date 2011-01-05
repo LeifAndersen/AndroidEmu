@@ -1,0 +1,1446 @@
+Archive member included because of file (symbol)
+
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(crc32.o)
+                              unzip.o (crc32)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o)
+                              zip_old.o (deflateEnd)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_arm.o)
+                              Main.o (gp_clearFramebuffer16)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_buttons.o)
+                              Input.o (gp_getButton)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_cpuspeed.o)
+                              Main.o (gp_getPCLK)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o)
+                              Menu.o (smc_dir)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o)
+                              Main.o (gp_setFramebuffer)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_irq.o)
+                              gp32_snd.o (gp_enableIRQ)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_setfont.o)
+                              Main.o (gp_drawString)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o)
+                              fileio.o (gzread)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (inflateReset)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inftrees.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o) (inflate_table)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o) (smSeekFile)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (sm_IOInitDefaultValue)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_lpt.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o) (SMLCBCardInserted)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_uni.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (sm_ConvertStrToUnicode)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(trees.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o) (_length_code)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(zutil.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o) (z_errmsg)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(adler32.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o) (adler32)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(compress.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o) (compressBound)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_8x8font.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_setfont.o) (font8x8)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inffast.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o) (inflate_fast)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_buf.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (smbBufPoolInit)
+C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_conf.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (smfsUserInit)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_udivsi3.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o) (__udivsi3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_divsi3.o)
+                              Main.o (__divsi3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_umodsi3.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (__umodsi3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_dvmd_tls.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_udivsi3.o) (__div0)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_addsubdf3.o)
+                              Main.o (__subdf3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_muldivdf3.o)
+                              Main.o (__muldf3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_cmpdf2.o)
+                              Main.o (__gtdf2)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixdfsi.o)
+                              Main.o (__fixdfsi)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixunsdfsi.o)
+                              Main.o (__fixunsdfsi)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_truncdfsf2.o)
+                              Main.o (__truncdfsf2)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_addsubsf3.o)
+                              Main.o (__addsf3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_muldivsf3.o)
+                              Main.o (__mulsf3)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixunssfsi.o)
+                              Main.o (__fixunssfsi)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(errno.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (__errno)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fclose.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fclose)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fdopen.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fdopen)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fflush.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fflush)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(findfp.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fclose.o) (__sinit)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(flags.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fdopen.o) (__sflags)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fopen.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fopen)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fprintf.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fprintf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fputc.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fputc)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fread.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fread)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fclose.o) (_free_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fseek.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fopen.o) (_fseek_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fstatr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fseek.o) (_fstat_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ftell.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (ftell)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwalk.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fflush.o) (_fwalk)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwrite.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (fwrite)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(impure.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(errno.o) (_impure_ptr)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(makebuf.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fseek.o) (__smakebuf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(malloc.o)
+                              Main.o (malloc)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mallocr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o) (__malloc_current_mallinfo)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcmp.o)
+                              fileio.o (memcmp)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcpy.o)
+                              Main.o (memcpy)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memset.o)
+                              Main.o (memset)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mlock.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o) (__malloc_lock)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(openr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fopen.o) (_open_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(rand.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o) (srand)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(realloc.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o) (realloc)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reallocr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(realloc.o) (_realloc_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reent.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fstatr.o) (errno)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(refill.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fread.o) (__srefill)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(remove.o)
+                              Main.o (remove)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sbrkr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o) (_sbrk_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sprintf.o)
+                              Main.o (sprintf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fdopen.o) (__sread)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcat.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (strcat)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcmp.o)
+                              Menu.o (strcmp)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcpy.o)
+                              Main.o (strcpy)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strlen.o)
+                              Main.o (strlen)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strncasecmp.o)
+                              Main.o (strncasecmp)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(syscalls.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(openr.o) (_open)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(toupper.o)
+                              Main.o (toupper)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(unlinkr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(remove.o) (_unlink_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sprintf.o) (_vfprintf_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vsnprintf.o)
+                              C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o) (vsnprintf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wbuf.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fputc.o) (__swbuf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcrtomb.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (_wcrtomb_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcsrtombs.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (_wcsrtombs_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wctomb_r.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcrtomb.o) (_wctomb_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(writer.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o) (_write_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wsetup.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (__swsetup)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(closer.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o) (_close_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ctype_.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strncasecmp.o) (_ctype_)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(dtoa.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (_dtoa_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fvwrite.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwrite.o) (__sfvwrite)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wctomb_r.o) (__lc_ctype)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(lseekr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o) (_lseek_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memchr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (memchr)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memmove.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fvwrite.o) (memmove)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mprec.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(dtoa.o) (__mprec_bigtens)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(readr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o) (_read_r)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isinf.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (isinf)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isnan.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o) (isnan)
+/cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(callocr.o)
+                              /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mprec.o) (_calloc_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+cram                0x80              Main.o
+PSG_sn_UPDATESTEP   0x4               sn76496.o
+snd_clean           0x1               gp32_snd.o
+system_root_dir     0x100             Main.o
+snd_enabled         0x2               gp32_snd.o
+nFlip               0x1               gp32_snd.o
+ST                  0x20              fm.o
+CH                  0x948             fm.o
+timer_base          0x4               fm.o
+errno               0x4               /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reent.o)
+pad_config          0x20              Main.o
+sample_count_lookup
+                    0x320             Main.o
+highlightbar        0x2800            gp32_highlightbar.o
+addr_A1             0x1               fm.o
+current_state       0x4               savestate.o
+menu_header         0x7800            gp32_menu_header.o
+soundbuffer         0x4               Main.o
+pOutput             0x14              gp32_snd.o
+snd_enable_backup   0x2               gp32_snd.o
+last_rom_name       0x100             Main.o
+gg_menu_options     0x40              Menu.o
+quick_state         0x4               savestate.o
+work_ram            0x10000           Main.o
+romlist             0x42000           Menu.o
+RomDir              0x100             Menu.o
+GG_RomDir           0x100             Menu.o
+g_argv              0x4               Main.o
+LFO_AM              0x4               fm.o
+sms_menu_options    0x40              Menu.o
+pad2                0x1               Main.o
+Timer               0x4               gp32_snd.o
+drmd                0x104             Main.o
+menutile            0x2000            gp32_menutile.o
+dacen               0x4               fm.o
+pad1                0x1               Main.o
+sram                0x10000           Main.o
+Inp                 0x100             Input.o
+tile_cache          0x4000            Main.o
+MD_RomDir           0x100             Menu.o
+frame_buffer_size   0x4               Main.o
+dac_buffer          0x400             fm.o
+sms_system_dir      0x100             Main.o
+pal_lookup          0x4000            Main.o
+temp_state          0x4               savestate.o
+OPN_pan             0xc               fm.o
+SL3                 0x1c              fm.o
+md_menu_options     0x40              Menu.o
+EmuFB               0x10              Main.o
+SMS_RomDir          0x100             Menu.o
+savestate_name      0x200             Menu.o
+EmuFBcentered       0x10              Main.o
+last_save_name      0x100             Main.o
+framebuffer16       0xc               Main.o
+PSG                 0xac              sn76496.o
+cyclone             0x98              Main.o
+zram                0x4000            Main.o
+md_system_dir       0x100             Main.o
+rom_list_loaded     0x4               Menu.o
+menutext            0x3200            Menu.o
+curseg              0x1               gp32_snd.o
+vram                0x10000           Main.o
+framebuffer8        0xc               Main.o
+laststage           0x4               Main.o
+vsram               0x80              Main.o
+drz80               0x74              Main.o
+dacout              0x4               fm.o
+savestate           0x1428            Menu.o
+OPN                 0x18              fm.o
+gg_system_dir       0x100             Main.o
+system_dir          0x100             Main.o
+pad3                0x1               Main.o
+LFO_PM              0x4               fm.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0c000000         0x00800000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD crt0.o
+LOAD Main.o
+LOAD Menu.o
+LOAD Input.o
+LOAD fm.o
+LOAD DrMD_core.o
+LOAD gp32_menu_header.o
+LOAD gp32_highlightbar.o
+LOAD gp32_menutile.o
+LOAD sn76496.o
+LOAD gp32_snd.o
+LOAD unzip.o
+LOAD zip_old.o
+LOAD ioapi.o
+LOAD fileio.o
+LOAD gp32_md_render_8.o
+LOAD gp32_md_render_16_small.o
+LOAD mdrom_good.o
+LOAD rom_crc.o
+LOAD ../DrZ80/DrZ80.o
+LOAD ../cyclone/Cyclone.o
+LOAD savestate.o
+LOAD C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a
+LOAD /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libm.a
+LOAD /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a
+LOAD /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a
+LOAD /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a
+
+.text           0x0c000000    0x9fa38
+                0x0c000000                __text_start = .
+ *(EXCLUDE_FILE(*text.iwram*) .text)
+ .text          0x0c000000       0x88 crt0.o
+                0x0c000000                _start
+ .text          0x0c000088     0x2a6c Main.o
+                0x0c000724                SaveSram
+                0x0c000088                update_menu_graphics_gamma
+                0x0c0010c4                Genesis_Init
+                0x0c000cf8                DrMD_Init
+                0x0c000afc                SaveMenuOptions
+                0x0c0009a4                LoadMenuOptions
+                0x0c000de8                Cyclone_Init
+                0x0c001310                DrMD_Reset
+                0x0c000828                DeleteSram
+                0x0c000600                LoadSram
+                0x0c00124c                illegal_memory_io
+                0x0c000c1c                DeleteMenuOptions
+                0x0c0012bc                Cyclone_Reset
+                0x0c0005b8                clear_screen8
+                0x0c0016b4                DrMD_DrZ80_irq_callback
+                0x0c000edc                Detect_Country_Genesis
+                0x0c000e64                DrMD_DrZ80_Init
+                0x0c0019d4                main
+                0x0c001568                DrMD_DrZ80_Reset
+                0x0c00169c                DrMD_DrZ80_Set_Irq
+                0x0c001250                SekInterrupt
+                0x0c001300                Cyclone_ClearIRQ
+                0x0c001248                InvalidOpCallback
+                0x0c0015e8                reset_drmd
+                0x0c00024c                MD_update_sound_timing
+                0x0c0005a4                clear_screen16
+                0x0c0005cc                CheckSram
+                0x0c001264                DrMDCheckPc
+                0x0c000518                Round_Double
+                0x0c0001b8                MD_load_pal
+                0x0c000590                clear_screen
+ .text          0x0c002af4     0x3bdc Menu.o
+                0x0c0037f4                FileSelect
+                0x0c0036e8                load_rom_list
+                0x0c002b50                MenuPause
+                0x0c005918                MainMenu
+                0x0c002cd4                PrintTile
+                0x0c004cf4                SMSConfigPad
+                0x0c005018                GGConfigPad
+                0x0c002af4                sync
+                0x0c0030c4                FileScan
+                0x0c002ebc                MessageBox
+                0x0c002be8                MenuFlip
+                0x0c005800                DirectorySelector
+                0x0c003f0c                loadstate_file
+                0x0c002da0                PrintBar
+                0x0c002df4                PrintTitle
+                0x0c002c34                SplitFilename
+                0x0c004900                MDConfigPad
+ .text          0x0c0066d0       0xcc Input.o
+                0x0c0066f8                InputUpdate
+                0x0c0066d0                InputInit
+ .text          0x0c00679c     0x5cd4 fm.o
+                0x0c00836c                YM2612UpdateOne
+                0x0c00c1d8                YM2612ResetChip
+                0x0c00679c                fm_update_dac
+                0x0c00c340                fm_update_timers
+                0x0c00c328                YM2612Init
+                0x0c00c440                fm_vdp_line_update
+                0x0c00c094                fm_write
+                0x0c009738                RefreshFm
+                0x0c0094d0                update_tables
+                0x0c009728                fm_read
+ .text          0x0c00c470      0x260 sn76496.o
+                0x0c00c5d4                SN76496_sh_start
+                0x0c00c470                psg_write
+ .text          0x0c00c6d0      0x714 gp32_snd.o
+                0x0c00cd8c                Gp32_AudioPause
+                0x0c00cd6c                Gp32_AudioStop
+                0x0c00c79c                IsrInstall
+                0x0c00c7f8                IsrUninstall
+                0x0c00ca7c                Gp32_AudioStart
+                0x0c00c6d0                playnextchunk
+ .text          0x0c00cde4     0x1894 unzip.o
+                0x0c00e46c                unzOpenCurrentFilePassword
+                0x0c00db88                unzReadCurrentFile
+                0x0c00db08                unzGoToFilePos
+                0x0c00d9b0                unzLocateFile
+                0x0c00dff0                unzOpenCurrentFile3
+                0x0c00d4b4                unzGoToFirstFile
+                0x0c00e494                unzOpenCurrentFile
+                0x0c00e44c                unzOpenCurrentFile2
+                0x0c00d02c                unzGetGlobalInfo
+                0x0c00de70                unzGetLocalExtrafield
+                0x0c00d89c                unzGetCurrentFileInfo
+                0x0c00dac4                unzGetFilePos
+                0x0c00e608                unzSetOffset
+                0x0c00e5b8                unzGetOffset
+                0x0c00d8e0                unzGoToNextFile
+                0x0c00df1c                unzCloseCurrentFile
+                0x0c00de40                unzeof
+                0x0c00e510                unzGetGlobalComment
+                0x0c00de1c                unztell
+                0x0c00d520                unzOpen2
+                0x0c00cf9c                unzStringFileNameCompare
+                0x0c00e4c0                unzClose
+                0x0c00d894                unzOpen
+ .text          0x0c00e678     0x16d4 zip_old.o
+                0x0c00f034                zipWriteInFileInZip
+                0x0c00faec                zipClose
+                0x0c00f3f8                zipCloseFileInZip
+                0x0c00f1b0                zipCloseFileInZipRaw
+                0x0c00efe4                zipOpen
+                0x0c00ea0c                zipOpen2
+                0x0c00f404                zipOpenNewFileInZip3
+                0x0c00fa2c                zipOpenNewFileInZip2
+                0x0c00fa9c                zipOpenNewFileInZip
+ .text          0x0c00fd4c      0x180 ioapi.o
+                0x0c00fe08                fseek_file_func
+                0x0c00fdd8                fread_file_func
+                0x0c00fe5c                fclose_file_func
+                0x0c00fe6c                fill_fopen_filefunc
+                0x0c00fe00                ftell_file_func
+                0x0c00fe64                ferror_file_func
+                0x0c00fdec                fwrite_file_func
+                0x0c00fd4c                fopen_file_func
+ .text          0x0c00fecc      0x7d0 fileio.o
+                0x0c010440                save_archive
+                0x0c0100c0                load_archive
+                0x0c00ff80                get_archive_crc
+                0x0c00fecc                get_archive_filename
+                0x0c00fff0                check_zip
+                0x0c01005c                gzsize
+ .text          0x0c01069c     0x3f10 gp32_md_render_8.o
+                0x0c010880                md_render_8
+ .text          0x0c0145ac      0xae8 gp32_md_render_16_small.o
+                0x0c014664                md_render_16_small
+ .text          0x0c015094       0x50 mdrom_good.o
+                0x0c015094                MD_DAT_LookFor
+                0x0c0150cc                MD_DAT_getname
+ .text          0x0c0150e4    0x6b164 ../cyclone/Cyclone.o
+                0x0c0150e4                CycloneVer
+                0x0c015168                CycloneInit
+                0x0c01516c                CycloneSetSr
+                0x0c0150e8                CycloneRun
+                0x0c0151bc                CycloneGetSr
+ .text          0x0c080248      0xb70 savestate.o
+                0x0c080248                savestate_mem
+                0x0c0807ac                loadstate_mem
+ .text          0x0c080db8      0x78c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(crc32.o)
+                0x0c080dc4                crc32
+                0x0c080db8                get_crc_table
+ .text          0x0c081544     0x2090 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o)
+                0x0c0818d0                deflate
+                0x0c081658                deflateSetDictionary
+                0x0c0817d0                deflateBound
+                0x0c0822c0                deflateInit_
+                0x0c081ff4                deflateInit2_
+                0x0c081eac                deflateReset
+                0x0c081790                deflatePrime
+                0x0c0822f8                deflateCopy
+                0x0c081dc0                deflateParams
+                0x0c081544                deflateEnd
+ .text          0x0c0835d4       0x50 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_arm.o)
+                0x0c0835d4                _cpu_speed
+                0x0c08360c                gp_clearFramebuffer16
+                0x0c0835f4                gp_setMMU
+ .text          0x0c083624       0x48 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_buttons.o)
+                0x0c083624                gp_initButton
+                0x0c083638                gp_getButton
+ .text          0x0c08366c      0x994 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_cpuspeed.o)
+                0x0c08368c                gp_setCpuspeed
+                0x0c083fe4                gp_Reset
+                0x0c08366c                gp_getPCLK
+                0x0c08367c                gp_getHCLK
+ .text          0x0c084000      0x548 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o)
+                0x0c0842b0                smc_fopen
+                0x0c08451c                smc_ftell
+                0x0c08448c                smc_fclose
+                0x0c084040                smc_dir
+                0x0c084418                smc_fwrite
+                0x0c0844d8                smc_fseek
+                0x0c084528                smc_rewind
+                0x0c084538                smc_filesize
+                0x0c084234                smc_createdir
+                0x0c0843a0                smc_fread
+                0x0c084134                smc_read
+                0x0c084274                smc_delete
+                0x0c0841d0                smc_write
+ .text          0x0c084548      0x428 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o)
+                0x0c08457c                gp_drawPixel8
+                0x0c0845ac                gp_setFramebuffer
+                0x0c084684                gp_initFramebuffer
+                0x0c084590                gp_drawPixel16
+                0x0c08493c                gp_setPalette
+ .text          0x0c084970       0x40 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_irq.o)
+                0x0c084970                gp_enableIRQ
+                0x0c084984                gp_disableIRQ
+                0x0c0849a4                gp_removeSWIIRQ
+                0x0c084998                gp_installSWIIRQ
+ .text          0x0c0849b0      0x250 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_setfont.o)
+                0x0c0849b0                gp_drawString
+ .text          0x0c084c00     0x1358 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o)
+                0x0c085a98                gzflush
+                0x0c085694                gzungetc
+                0x0c085668                gzgetc
+                0x0c0852fc                gzopen
+                0x0c085e30                gzerror
+                0x0c084c00                gzsetparams
+                0x0c085d48                gztell
+                0x0c085f24                gzclearerr
+                0x0c085b60                gzseek
+                0x0c085350                gzread
+                0x0c085954                gzputs
+                0x0c0852a4                gzdopen
+                0x0c085dd0                gzclose
+                0x0c0857a0                gzwrite
+                0x0c085920                gzputc
+                0x0c085d54                gzeof
+                0x0c085718                gzgets
+                0x0c085ad0                gzrewind
+                0x0c08589c                gzprintf
+ .text          0x0c085f58     0x1d00 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o)
+                0x0c087b04                inflateCopy
+                0x0c086230                inflate
+                0x0c087ab4                inflateSyncPoint
+                0x0c0860d8                inflateInit_
+                0x0c085f58                inflateReset
+                0x0c08797c                inflateSync
+                0x0c087830                inflateSetDictionary
+                0x0c0877bc                inflateEnd
+                0x0c085fc8                inflateInit2_
+ .text          0x0c087c58      0x560 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inftrees.o)
+                0x0c087c58                inflate_table
+ .text          0x0c0881b8     0x7958 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+                0x0c08ee9c                smWriteFile
+                0x0c0884b0                smRegisterCallBack
+                0x0c08dbc4                smRenameFile
+                0x0c08b4ac                smReadDirExHandle
+                0x0c08faa8                sm_InnerNoFATUpdate
+                0x0c08e9e8                smRemoveDir
+                0x0c08a474                smInit
+                0x0c0884e0                smUnregisterCallBack
+                0x0c08fae8                sm_InnerFATUpdate
+                0x0c08f6e0                smFileExtend
+                0x0c08a564                smcReadCluster
+                0x0c08f7c4                smCloseFile
+                0x0c08b904                smReadDir
+                0x0c08bce8                smGetListNumDir
+                0x0c08b6e8                smReadDirEx
+                0x0c0896c8                smFormatVol
+                0x0c0883fc                smMountVol
+                0x0c08ba38                smGetSizeFile
+                0x0c089678                smNoFATUpdate
+                0x0c08c69c                smFATUpdate
+                0x0c08e53c                smCreateFile
+                0x0c0881c0                smcAllocCluster
+                0x0c08844c                smUnmountVol
+                0x0c08c174                smReadFile
+                0x0c08b310                smReadStat
+                0x0c08e860                smWriteStat
+                0x0c08e270                smCreateDir
+                0x0c08de40                smMoveFile
+                0x0c089144                smSeekFile
+                0x0c08bb28                smOpenFile
+                0x0c08862c                SMCBCardInserted
+                0x0c088658                SMCBCardEjected
+                0x0c08c6fc                smcWriteCluster
+                0x0c089fd0                smGetVolInfo
+                0x0c08b230                smGetLongName
+                0x0c08cb90                smRemoveFile
+                0x0c088518                smGetVersionInfo
+                0x0c08e0b4                smSetLongName
+ .text          0x0c08fb10     0x1764 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o)
+                0x0c090b50                smpFlashReadPage
+                0x0c08fe30                SMPCBCardInserted
+                0x0c090310                smpFlashEraseBlock
+                0x0c090df8                smpFlashReadSector
+                0x0c0911f0                smpFlashWriteSector
+                0x0c08fe44                SMPCBCardEjected
+                0x0c090898                smpFlashReadPage2
+                0x0c09016c                smpFlashReadID
+                0x0c09054c                smpFlashReadSpare
+                0x0c090808                smpFlashReadSectorSpare
+                0x0c09011c                smpCheckDevice
+                0x0c090e7c                smpFlashWritePage
+                0x0c08fe64                sm_IOInitDefaultValue
+ .text          0x0c091274     0x27a8 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_lpt.o)
+                0x0c092ff8                smlReadPhysBlock
+                0x0c09306c                smlWriteBlock
+                0x0c091e98                smlIsSpaceAvailable
+                0x0c091de8                smlIsPhysSectorErased
+                0x0c09212c                smlGetNewSpecifiedBlock
+                0x0c093308                smlTouchBlock
+                0x0c092f84                smlReadBlock
+                0x0c0918e8                SMLCBCardEjected
+                0x0c092088                smlDiscardPhysBlock
+                0x0c09340c                smlFormatVol
+                0x0c091fec                smlEraseBlock
+                0x0c0918e4                SMLCBCardInserted
+                0x0c092ed0                smlReadSector
+                0x0c0923e8                sm_ECCCorrect
+                0x0c0918fc                sm_LPTInitDefaultValue
+                0x0c091dc8                smlOptimizeVol
+                0x0c091f8c                smlGetDeviceInfo
+ .text          0x0c093a1c       0xe8 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_uni.o)
+                0x0c093a60                sm_ConvertStrToUnicode
+                0x0c093a1c                sm_ConvertCharToUnicode
+ .text          0x0c093b04     0x2100 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(trees.o)
+                0x0c095494                _tr_flush_block
+                0x0c095358                _tr_stored_block
+                0x0c093bb0                _tr_init
+                0x0c095aec                _tr_tally
+                0x0c094b6c                _tr_align
+ .text          0x0c095c04       0x48 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(zutil.o)
+                0x0c095c04                zlibVersion
+                0x0c095c10                zlibCompileFlags
+                0x0c095c34                zcfree
+                0x0c095c18                zError
+                0x0c095c2c                zcalloc
+ .text          0x0c095c4c      0x17c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(adler32.o)
+                0x0c095c4c                adler32
+ .text          0x0c095dc8       0xe4 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(compress.o)
+                0x0c095dc8                compress2
+                0x0c095e9c                compressBound
+                0x0c095e7c                compress
+ .text          0x0c095eac      0x474 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inffast.o)
+                0x0c095eac                inflate_fast
+ .text          0x0c096320       0x84 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_buf.o)
+                0x0c096360                smbAllocBuf
+                0x0c096320                smbBufPoolInit
+                0x0c096384                smbFreeBuf
+ .text          0x0c0963a4      0x168 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_conf.o)
+                0x0c0964d8                sm_strcpy
+                0x0c0963f0                sm_memcmp
+                0x0c0963c8                smfsWaitUSec
+                0x0c0963a4                smfsUserInit
+                0x0c09648c                sm_strcmp
+                0x0c0963c0                smfsGetTime
+                0x0c096438                sm_memcpy
+                0x0c096464                sm_memset
+                0x0c0964f0                sm_strlen
+ .text          0x0c09650c       0xf8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_udivsi3.o)
+                0x0c09650c                __udivsi3
+ .text          0x0c096604      0x128 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_divsi3.o)
+                0x0c096604                __divsi3
+ .text          0x0c09672c       0xcc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_umodsi3.o)
+                0x0c09672c                __umodsi3
+ .text          0x0c0967f8        0x4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_dvmd_tls.o)
+                0x0c0967f8                __div0
+ .text          0x0c0967fc      0x388 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_addsubdf3.o)
+                0x0c096b0c                __floatsidf
+                0x0c096b38                __extendsfdf2
+                0x0c096800                __adddf3
+                0x0c096ae4                __floatunsidf
+                0x0c0967fc                __subdf3
+ .text          0x0c096b84      0x4c4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_muldivdf3.o)
+                0x0c096ddc                __divdf3
+                0x0c096b84                __muldf3
+ .text          0x0c097048       0xa4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_cmpdf2.o)
+                0x0c097058                __cmpdf2
+                0x0c097058                __eqdf2
+                0x0c097048                __gtdf2
+                0x0c097050                __ltdf2
+                0x0c097050                __ledf2
+                0x0c097058                __nedf2
+                0x0c097048                __gedf2
+ .text          0x0c0970ec       0x80 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixdfsi.o)
+                0x0c0970ec                __fixdfsi
+ .text          0x0c09716c       0x74 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixunsdfsi.o)
+                0x0c09716c                __fixunsdfsi
+ .text          0x0c0971e0       0xf8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_truncdfsf2.o)
+                0x0c0971e0                __truncdfsf2
+ .text          0x0c0972d8      0x218 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_addsubsf3.o)
+                0x0c0972d8                __subsf3
+                0x0c0974a4                __floatsisf
+                0x0c09749c                __floatunsisf
+                0x0c0972dc                __addsf3
+ .text          0x0c0974f0      0x330 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_muldivsf3.o)
+                0x0c097680                __divsf3
+                0x0c0974f0                __mulsf3
+ .text          0x0c097820       0x5c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/libgcc.a(_fixunssfsi.o)
+                0x0c097820                __fixunssfsi
+ .text          0x0c09787c       0x10 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(errno.o)
+                0x0c09787c                __errno
+ .text          0x0c09788c      0x114 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fclose.o)
+                0x0c09788c                fclose
+ .text          0x0c0979a0       0xbc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fdopen.o)
+                0x0c0979a0                _fdopen_r
+                0x0c097a40                fdopen
+ .text          0x0c097a5c       0xe0 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fflush.o)
+                0x0c097a5c                fflush
+ .text          0x0c097b3c      0x230 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(findfp.o)
+                0x0c097bf8                __sinit
+                0x0c097b98                __sfmoreglue
+                0x0c097d5c                _cleanup
+                0x0c097d50                _cleanup_r
+                0x0c097c74                __sfp
+ .text          0x0c097d6c       0xac /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(flags.o)
+                0x0c097d6c                __sflags
+ .text          0x0c097e18       0xf8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fopen.o)
+                0x0c097ef4                fopen
+                0x0c097e18                _fopen_r
+ .text          0x0c097f10       0x20 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fprintf.o)
+                0x0c097f10                fprintf
+ .text          0x0c097f30       0x7c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fputc.o)
+                0x0c097f30                fputc
+ .text          0x0c097fac       0xc8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fread.o)
+                0x0c097fac                fread
+ .text          0x0c098074      0x338 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o)
+                0x0c098178                _free_r
+                0x0c098074                _malloc_trim_r
+ .text          0x0c0983ac      0x49c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fseek.o)
+                0x0c09881c                fseek
+                0x0c0983ac                _fseek_r
+ .text          0x0c098848       0x44 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fstatr.o)
+                0x0c098848                _fstat_r
+ .text          0x0c09888c      0x100 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ftell.o)
+                0x0c098978                ftell
+                0x0c09888c                _ftell_r
+ .text          0x0c09898c       0xdc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwalk.o)
+                0x0c09898c                _fwalk
+ .text          0x0c098a68       0x64 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwrite.o)
+                0x0c098a68                fwrite
+ .text          0x0c098acc      0x158 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(makebuf.o)
+                0x0c098acc                __smakebuf
+ .text          0x0c098c24       0x28 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(malloc.o)
+                0x0c098c24                malloc
+                0x0c098c38                free
+ .text          0x0c098c4c      0x6a0 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mallocr.o)
+                0x0c098c4c                _malloc_r
+ .text          0x0c0992ec       0x84 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcmp.o)
+                0x0c0992ec                memcmp
+ .text          0x0c099370       0x90 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcpy.o)
+                0x0c099370                memcpy
+ .text          0x0c099400       0x78 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memset.o)
+                0x0c099400                memset
+ .text          0x0c099478        0x8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mlock.o)
+                0x0c09947c                __malloc_unlock
+                0x0c099478                __malloc_lock
+ .text          0x0c099480       0x48 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(openr.o)
+                0x0c099480                _open_r
+ .text          0x0c0994c8       0x74 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(rand.o)
+                0x0c0994e4                rand
+                0x0c0994c8                srand
+ .text          0x0c09953c       0x1c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(realloc.o)
+                0x0c09953c                realloc
+ .text          0x0c099558      0x4c0 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reallocr.o)
+                0x0c099558                _realloc_r
+ .text          0x0c099a18      0x1ac /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reent.o)
+                0x0c099a18                cleanup_glue
+                0x0c099a50                _reclaim_reent
+                0x0c099b50                _wrapup_reent
+ .text          0x0c099bc4      0x1a8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(refill.o)
+                0x0c099bdc                __srefill
+ .text          0x0c099d6c       0x30 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(remove.o)
+                0x0c099d88                remove
+                0x0c099d6c                _remove_r
+ .text          0x0c099d9c       0x40 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sbrkr.o)
+                0x0c099d9c                _sbrk_r
+ .text          0x0c099ddc       0xcc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sprintf.o)
+                0x0c099ddc                _sprintf_r
+                0x0c099e3c                sprintf
+ .text          0x0c099ea8      0x11c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o)
+                0x0c099f60                __sseek
+                0x0c099ea8                __sread
+                0x0c099fb0                __sclose
+                0x0c099ef4                __swrite
+ .text          0x0c099fc4       0x70 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcat.o)
+                0x0c099fc4                strcat
+ .text          0x0c09a034       0xa4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcmp.o)
+                0x0c09a034                strcmp
+ .text          0x0c09a0d8       0x90 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcpy.o)
+                0x0c09a0d8                strcpy
+ .text          0x0c09a168       0x60 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strlen.o)
+                0x0c09a168                strlen
+ .text          0x0c09a1c8       0xb4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strncasecmp.o)
+                0x0c09a1c8                strncasecmp
+ .text          0x0c09a27c      0x818 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(syscalls.o)
+                0x0c09a8b8                _getpid
+                0x0c09a3b4                initialise_monitor_handles
+                0x0c09aa44                isatty
+                0x0c09a91c                _fstat
+                0x0c09a7e8                _open
+                0x0c09a8c0                _sbrk
+                0x0c09a9bc                _raise
+                0x0c09aa08                _times
+                0x0c09a954                _stat
+                0x0c09a658                _lseek
+                0x0c09a9ac                _link
+                0x0c09a670                _swiwrite
+                0x0c09aa74                _rename
+                0x0c09a578                _swilseek
+                0x0c09a808                _swiclose
+                0x0c09a734                _swiopen
+                0x0c09a9b4                _unlink
+                0x0c09a6bc                _write
+                0x0c09a890                _kill
+                0x0c09a9c0                _gettimeofday
+                0x0c09a508                _read
+                0x0c09a870                _exit
+                0x0c09aa4c                _system
+                0x0c09a4bc                _swiread
+                0x0c09a858                _close
+ .text          0x0c09aa94       0x18 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(toupper.o)
+                0x0c09aa94                toupper
+ .text          0x0c09aaac       0x40 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(unlinkr.o)
+                0x0c09aaac                _unlink_r
+ .text          0x0c09aaec     0x1c80 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o)
+                0x0c09ab34                _vfprintf_r
+                0x0c09c714                vfprintf
+ .text          0x0c09c76c       0xc4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vsnprintf.o)
+                0x0c09c76c                vsnprintf
+                0x0c09c7d4                _vsnprintf_r
+ .text          0x0c09c830      0x110 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wbuf.o)
+                0x0c09c830                __swbuf
+ .text          0x0c09c940       0x7c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcrtomb.o)
+                0x0c09c940                _wcrtomb_r
+                0x0c09c990                wcrtomb
+ .text          0x0c09c9bc      0x160 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcsrtombs.o)
+                0x0c09c9bc                _wcsrtombs_r
+                0x0c09cad8                wcsrtombs
+ .text          0x0c09cb1c      0x3e8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wctomb_r.o)
+                0x0c09cb1c                _wctomb_r
+ .text          0x0c09cf04       0x48 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(writer.o)
+                0x0c09cf04                _write_r
+ .text          0x0c09cf4c      0x108 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wsetup.o)
+                0x0c09cf4c                __swsetup
+ .text          0x0c09d054       0x40 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(closer.o)
+                0x0c09d054                _close_r
+ .text          0x0c09d094     0x15dc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(dtoa.o)
+                0x0c09d284                _dtoa_r
+ .text          0x0c09e670      0x3b8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fvwrite.o)
+                0x0c09e670                __sfvwrite
+ .text          0x0c09ea28       0xac /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+                0x0c09ea28                _setlocale_r
+                0x0c09ea8c                __locale_charset
+                0x0c09ea9c                _localeconv_r
+                0x0c09eaa8                setlocale
+                0x0c09eac4                localeconv
+ .text          0x0c09ead4       0x48 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(lseekr.o)
+                0x0c09ead4                _lseek_r
+ .text          0x0c09eb1c       0xd8 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memchr.o)
+                0x0c09eb1c                memchr
+ .text          0x0c09ebf4       0xd4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memmove.o)
+                0x0c09ebf4                memmove
+ .text          0x0c09ecc8      0xc34 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mprec.o)
+                0x0c09f894                _mprec_log10
+                0x0c09ef20                _hi0bits
+                0x0c09ecc8                _Balloc
+                0x0c09f6dc                _d2b
+                0x0c09f038                _multiply
+                0x0c09f800                _ratio
+                0x0c09ee48                _s2b
+                0x0c09f010                _i2b
+                0x0c09ef7c                _lo0bits
+                0x0c09f438                __mcmp
+                0x0c09f228                _pow5mult
+                0x0c09f5c0                _ulp
+                0x0c09f628                _b2d
+                0x0c09ed78                _multadd
+                0x0c09f48c                __mdiff
+                0x0c09f33c                _lshift
+                0x0c09ed5c                _Bfree
+ .text          0x0c09f8fc       0x48 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(readr.o)
+                0x0c09f8fc                _read_r
+ .text          0x0c09f944       0x3c /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isinf.o)
+                0x0c09f944                isinf
+ .text          0x0c09f980       0x20 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isnan.o)
+                0x0c09f980                isnan
+ .text          0x0c09f9a0       0x98 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(callocr.o)
+                0x0c09f9a0                _calloc_r
+ *(.text.*)
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.glue_7)
+ *(.glue_7t)
+                0x0c09fa38                . = ALIGN (0x4)
+                0x0c09fa38                __text_end = .
+
+.rodata         0x0c09fa38    0x55940
+ *(.rodata)
+ .rodata        0x0c09fa38    0x25824 Main.o
+                0x0c09fa38                gbax
+ .rodata        0x0c0c525c      0x311 Menu.o
+ *fill*         0x0c0c556d        0x3 ff
+ .rodata        0x0c0c5570     0x884c fm.o
+                0x0c0c5770                lfo_pm_table
+                0x0c0c5570                sin_tab
+                0x0c0cdc64                eg_rate_select
+                0x0c0cdb64                dt_tab
+                0x0c0cd970                lfo_pm_output
+                0x0c0cdb30                lfo_ams_depth_shift
+                0x0c0cd770                tl_tab
+                0x0c0cdbe4                eg_rate_shift
+                0x0c0cdb54                opn_fktable
+                0x0c0cdce4                eg_inc
+                0x0c0cdb34                lfo_samples_per_step
+                0x0c0cdd7c                sl_table
+ .rodata        0x0c0cddbc      0x100 gp32_snd.o
+ .rodata        0x0c0cdebc       0x54 unzip.o
+                0x0c0cdebc                unz_copyright
+ .rodata        0x0c0cdf10       0x50 zip_old.o
+                0x0c0cdf10                zip_copyright
+ .rodata        0x0c0cdf60       0x80 fileio.o
+ .rodata        0x0c0cdfe0     0x2000 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(crc32.o)
+ .rodata        0x0c0cffe0       0xb8 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o)
+                0x0c0cffe0                deflate_copyright
+ .rodata        0x0c0d0098        0xe C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o)
+ *fill*         0x0c0d00a6        0x2 ff
+ .rodata        0x0c0d00a8        0x8 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o)
+ .rodata        0x0c0d00b0      0x8a8 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o)
+ .rodata        0x0c0d0958      0x12c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inftrees.o)
+                0x0c0d0958                inflate_copyright
+ .rodata        0x0c0d0a84      0x1d0 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_lpt.o)
+ .rodata        0x0c0d0c54      0xf28 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(trees.o)
+                0x0c0d0c54                _length_code
+                0x0c0d0d54                _dist_code
+ .rodata        0x0c0d1b7c       0x28 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(zutil.o)
+                0x0c0d1b7c                z_errmsg
+ .rodata        0x0c0d1ba4     0x2000 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_8x8font.o)
+                0x0c0d1ba4                font8x8
+ .rodata        0x0c0d3ba4       0x20 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o)
+ .rodata        0x0c0d3bc4      0x101 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ctype_.o)
+                0x0c0d3bc4                _ctype_
+ *fill*         0x0c0d3cc5        0x3 ff
+ .rodata        0x0c0d3cc8       0x30 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+ .rodata        0x0c0d3cf8      0x124 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mprec.o)
+                0x0c0d3cf8                __mprec_tinytens
+                0x0c0d3d48                __mprec_tens
+                0x0c0d3d20                __mprec_bigtens
+ *all.rodata*(*)
+ *(.roda)
+ *(.rodata.*)
+ .rodata.str1.4
+                0x0c0d3e1c      0x1e1 Main.o
+                                0x1e4 (size before relaxing)
+ *fill*         0x0c0d3ffd        0x3 ff
+ .rodata.str1.4
+                0x0c0d4000      0x659 Menu.o
+                                0x6ac (size before relaxing)
+ *fill*         0x0c0d4659        0x3 ff
+ .rodata.str1.4
+                0x0c0d465c        0x6 unzip.o
+                                  0x8 (size before relaxing)
+ *fill*         0x0c0d4662        0x2 ff
+ .rodata.str1.4
+                0x0c0d4664        0x2 zip_old.o
+                                  0xc (size before relaxing)
+ *fill*         0x0c0d4666        0x2 ff
+ .rodata.str1.4
+                0x0c0d4668        0x4 ioapi.o
+                                  0xc (size before relaxing)
+ .rodata.str1.4
+                0x0c0d466c      0x141 fileio.o
+                                0x148 (size before relaxing)
+ *fill*         0x0c0d47ad        0x3 ff
+ .rodata.str1.4
+                0x0c0d47b0    0x20882 mdrom_good.o
+                              0x2089c (size before relaxing)
+ *fill*         0x0c0f5032        0x2 ff
+ .rodata.str1.4
+                0x0c0f5034       0x24 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o)
+                                 0x30 (size before relaxing)
+ .rodata.str1.4
+                0x0c0f5058      0x1be C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o)
+                                0x1c0 (size before relaxing)
+ *fill*         0x0c0f5216        0x2 ff
+ .rodata.str1.4
+                0x0c0f5218       0x48 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+                                 0x50 (size before relaxing)
+ .rodata.str1.4
+                0x0c0f5260       0x7f C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(zutil.o)
+                                 0x8c (size before relaxing)
+ *fill*         0x0c0f52df        0x1 ff
+ .rodata.str1.4
+                0x0c0f52e0        0x2 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(impure.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x0c0f52e2        0x2 ff
+ .rodata.str1.4
+                0x0c0f52e4        0x4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(syscalls.o)
+ .rodata.str1.4
+                0x0c0f52e8       0x58 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o)
+                                 0x5c (size before relaxing)
+ .rodata.str1.4
+                0x0c0f5340       0x1e /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wctomb_r.o)
+                                 0x20 (size before relaxing)
+ *fill*         0x0c0f535e        0x2 ff
+ .rodata.str1.4
+                0x0c0f5360        0x9 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(dtoa.o)
+                                 0x14 (size before relaxing)
+ *fill*         0x0c0f5369        0x3 ff
+ .rodata.str1.4
+                0x0c0f536c        0xb /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+                                 0x18 (size before relaxing)
+ *(.gnu.linkonce.r*)
+                0x0c0f5378                . = ALIGN (0x4)
+ *fill*         0x0c0f5377        0x1 ff
+
+.ctors          0x0c0f5378        0x0
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0c0f5378                . = ALIGN (0x4)
+
+.dtors          0x0c0f5378        0x0
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0c0f5378                . = ALIGN (0x4)
+
+.eh_frame       0x0c0f5378        0x0
+ *(.eh_frame)
+                0x0c0f5378                . = ALIGN (0x4)
+
+.gcc_except_table
+                0x0c0f5378        0x0
+ *(.gcc_except_table)
+                0x0c0f5378                . = ALIGN (0x4)
+                0x0c0f5378                __ro_end = .
+
+.data           0x0c0f5378    0x2d57c
+                0x0c0f5378                __data_start = <code 336> (.)
+ *(.data)
+ .data          0x0c0f5378      0x3d0 Main.o
+                0x0c0f53a0                gp32_lcdver
+                0x0c0f5378                sound_rates
+                0x0c0f53a4                gamma_conv
+                0x0c0f538c                sn_UPDATESTEP
+ .data          0x0c0f5748      0x154 Menu.o
+                0x0c0f5848                currentrom
+                0x0c0f5748                currentrom_shortname
+                0x0c0f584c                cpu_speed_lookup
+ .data          0x0c0f589c     0x4420 fm.o
+                0x0c0f589c                YMOPN_ST_dt_tab
+                0x0c0f5cbc                OPN_fn_table
+                0x0c0f5c9c                OPN_lfo_freq
+ *fill*         0x0c0f9cbc        0x4 ff
+ .data          0x0c0f9cc0     0x2250 DrMD_core.o
+                0x0c0faa78                genesis_rom_bank_set
+                0x0c0fa914                m68k_read_memory_32
+                0x0c0fa93c                m68k_write_memory_8
+                0x0c0fbce8                DrMD_Z80_Out
+                0x0c0faabc                genesis_rom_banks_reset
+                0x0c0fba28                DrMD_Z80_write_8
+                0x0c0fac44                m68k_write_memory_16
+                0x0c0fa51c                m68k_read_memory_16
+                0x0c0fae54                m68k_write_memory_32
+                0x0c0fbcb8                DrMD_Z80_write_16
+                0x0c0fbce0                DrMD_Z80_In
+                0x0c0fbcec                DrMD_Z80_Rebase_PC
+                0x0c0fbe24                DrMD_Z80_Rebase_SP
+                0x0c0fb77c                DrMD_Z80_read_8
+                0x0c0f9cc4                update_md_pal
+                0x0c0f9dc8                DrMDRun
+                0x0c0fa144                m68k_read_memory_8
+                0x0c0fbc8c                DrMD_Z80_read_16
+                0x0c0fa0f8                m68k_irq_callback
+ .data          0x0c0fbf10     0x7800 gp32_menu_header.o
+                0x0c0fbf10                menu_header_orig
+ .data          0x0c103710     0x2800 gp32_highlightbar.o
+                0x0c103710                highlightbar_orig
+ .data          0x0c105f10     0x2000 gp32_menutile.o
+                0x0c105f10                menutile_orig
+ .data          0x0c107f10        0x4 gp32_snd.o
+                0x0c107f10                sound_buffer_size
+ .data          0x0c107f14     0xc468 mdrom_good.o
+                0x0c107f14                MDMyDat
+ .data          0x0c11437c      0x400 rom_crc.o
+                0x0c11437c                CRC32_table
+ .data          0x0c11477c     0x94c4 ../DrZ80/DrZ80.o
+                0x0c114780                DrZ80Run
+                0x0c11477c                DrZ80Ver
+ .data          0x0c11dc40       0x10 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_cpuspeed.o)
+ .data          0x0c11dc50       0x44 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o)
+                0x0c11dc50                _SDKVERSION
+ .data          0x0c11dc94        0x4 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+                0x0c11dc94                acSMFSVersion
+ .data          0x0c11dc98       0x22 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o)
+                0x0c11dcb8                g_mCode
+                0x0c11dc98                g_dCode
+ *fill*         0x0c11dcba        0x2 ff
+ .data          0x0c11dcbc     0x4454 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_uni.o)
+                0x0c11dcbc                tabksc5601
+                0x0c12210c                p_unicode_table
+ .data          0x0c122110       0x3c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(trees.o)
+ .data          0x0c12214c      0x380 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(impure.o)
+                0x0c12214c                _impure_ptr
+ .data          0x0c1224cc      0x410 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mallocr.o)
+                0x0c1224cc                __malloc_sbrk_base
+                0x0c1224d4                __malloc_av_
+                0x0c1224d0                __malloc_trim_threshold
+ .data          0x0c1228dc        0x4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ctype_.o)
+                0x0c1228dc                __ctype_ptr
+ .data          0x0c1228e0       0x14 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+                0x0c1228ec                __mb_cur_max
+                0x0c1228e0                __lc_ctype
+ *(.data.*)
+ *(.gnu.linkonce.d*)
+                0x0c1228f4                . = ALIGN (0x4)
+                0x0c1228f4                __data_end = .
+
+.bss            0x0c1228f4    0x93c54
+                0x0c1228f4                __bss_start = <code 336> (.)
+ *(.dynbss)
+ *(.gnu.linkonce.b*)
+ *(COMMON)
+ COMMON         0x0c1228f4    0x3cda1 Main.o
+                                  0x0 (size before relaxing)
+                0x0c1228f4                cram
+                0x0c122974                system_root_dir
+                0x0c122a74                pad_config
+                0x0c122a94                sample_count_lookup
+                0x0c122db4                soundbuffer
+                0x0c122db8                last_rom_name
+                0x0c122eb8                work_ram
+                0x0c132eb8                g_argv
+                0x0c132ebc                pad2
+                0x0c132ec0                drmd
+                0x0c132fc4                pad1
+                0x0c132fc5                sram
+                0x0c142fc8                tile_cache
+                0x0c146fc8                frame_buffer_size
+                0x0c146fcc                sms_system_dir
+                0x0c1470cc                pal_lookup
+                0x0c14b0cc                EmuFB
+                0x0c14b0dc                EmuFBcentered
+                0x0c14b0ec                last_save_name
+                0x0c14b1ec                framebuffer16
+                0x0c14b1f8                cyclone
+                0x0c14b290                zram
+                0x0c14f290                md_system_dir
+                0x0c14f390                vram
+                0x0c15f390                framebuffer8
+                0x0c15f39c                laststage
+                0x0c15f3a0                vsram
+                0x0c15f420                drz80
+                0x0c15f494                gg_system_dir
+                0x0c15f594                system_dir
+                0x0c15f694                pad3
+ *fill*         0x0c15f695        0x3 00
+ COMMON         0x0c15f698    0x46cec Menu.o
+                                  0x0 (size before relaxing)
+                0x0c15f698                gg_menu_options
+                0x0c15f6d8                romlist
+                0x0c1a16d8                RomDir
+                0x0c1a17d8                GG_RomDir
+                0x0c1a18d8                sms_menu_options
+                0x0c1a1918                MD_RomDir
+                0x0c1a1a18                md_menu_options
+                0x0c1a1a58                SMS_RomDir
+                0x0c1a1b58                savestate_name
+                0x0c1a1d58                rom_list_loaded
+                0x0c1a1d5c                menutext
+                0x0c1a4f5c                savestate
+ COMMON         0x0c1a6384      0x100 Input.o
+                                  0x0 (size before relaxing)
+                0x0c1a6384                Inp
+ COMMON         0x0c1a6484      0xdc0 fm.o
+                                  0x0 (size before relaxing)
+                0x0c1a6484                ST
+                0x0c1a64a4                CH
+                0x0c1a6dec                timer_base
+                0x0c1a6df0                addr_A1
+                0x0c1a6df4                LFO_AM
+                0x0c1a6df8                dacen
+                0x0c1a6dfc                dac_buffer
+                0x0c1a71fc                OPN_pan
+                0x0c1a7208                SL3
+                0x0c1a7224                dacout
+                0x0c1a7228                OPN
+                0x0c1a7240                LFO_PM
+ COMMON         0x0c1a7244     0x7800 gp32_menu_header.o
+                                  0x0 (size before relaxing)
+                0x0c1a7244                menu_header
+ COMMON         0x0c1aea44     0x2800 gp32_highlightbar.o
+                                  0x0 (size before relaxing)
+                0x0c1aea44                highlightbar
+ COMMON         0x0c1b1244     0x2000 gp32_menutile.o
+                                  0x0 (size before relaxing)
+                0x0c1b1244                menutile
+ COMMON         0x0c1b3244       0xb0 sn76496.o
+                                  0x0 (size before relaxing)
+                0x0c1b3244                PSG_sn_UPDATESTEP
+                0x0c1b3248                PSG
+ COMMON         0x0c1b32f4       0x29 gp32_snd.o
+                                  0x0 (size before relaxing)
+                0x0c1b32f4                snd_clean
+                0x0c1b32f8                snd_enabled
+                0x0c1b32fc                nFlip
+                0x0c1b3300                pOutput
+                0x0c1b3314                snd_enable_backup
+                0x0c1b3318                Timer
+                0x0c1b331c                curseg
+ *fill*         0x0c1b331d        0x3 00
+ COMMON         0x0c1b3320        0xc savestate.o
+                                  0x0 (size before relaxing)
+                0x0c1b3320                current_state
+                0x0c1b3324                quick_state
+                0x0c1b3328                temp_state
+ COMMON         0x0c1b332c        0x4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reent.o)
+                                  0x0 (size before relaxing)
+                0x0c1b332c                errno
+                0x0c1b3330                . = ALIGN (0x4)
+ .bss           0x0c1b3330      0x144 Main.o
+                0x0c1b3350                CurrentEmuMode
+                0x0c1b334c                savestatesize
+                0x0c1b333c                RomData
+                0x0c1b3348                romloaded
+                0x0c1b3338                volume
+                0x0c1b335e                sound_rate
+                0x0c1b3330                pad
+                0x0c1b3354                Flip
+                0x0c1b335f                frameskip
+                0x0c1b335d                sound_on
+                0x0c1b3344                Frames
+                0x0c1b335c                cpu_speed
+                0x0c1b3340                Taken
+                0x0c1b3334                frame_buffer
+                0x0c1b3360                show_fps
+                0x0c1b3358                prevFlip
+ .bss           0x0c1b3474     0x2820 Menu.o
+                0x0c1b3474                quick_save_present
+ .bss           0x0c1b5c94        0x4 Input.o
+ .bss           0x0c1b5c98       0x10 fm.o
+                0x0c1b5c98                dac_sample
+                0x0c1b5c9c                last_sample
+                0x0c1b5ca0                current_sample
+ .bss           0x0c1b5ca8        0x4 rom_crc.o
+                0x0c1b5ca8                CRC
+ .bss           0x0c1b5cac        0x4 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_cpuspeed.o)
+ .bss           0x0c1b5cb0        0x1 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o)
+ *fill*         0x0c1b5cb1        0x3 00
+ .bss           0x0c1b5cb4      0x14c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+ .bss           0x0c1b5e00       0x14 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o)
+ .bss           0x0c1b5e14       0x20 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_lpt.o)
+ .bss           0x0c1b5e34      0x61c C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_buf.o)
+ .bss           0x0c1b6450        0x4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(findfp.o)
+ .bss           0x0c1b6454       0x34 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mallocr.o)
+                0x0c1b6484                __malloc_top_pad
+                0x0c1b6480                __malloc_max_sbrked_mem
+                0x0c1b6454                __malloc_current_mallinfo
+                0x0c1b647c                __malloc_max_total_mem
+ .bss           0x0c1b6488       0xb4 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(syscalls.o)
+ .bss           0x0c1b653c        0xc /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+                0x0c1b6544                __nlocale_changed
+                0x0c1b6540                __mlocale_changed
+                0x0c1b653c                _PathLocale
+                0x0c1b6548                __bss_end = .
+                0x0c1b6548                __eheap_start = .
+                0x0c1b6548                _end = .
+                0x0c1b6548                __end__ = .
+                0x0c1b6548                PROVIDE (end, _end)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x71a
+ *(.comment)
+ .comment       0x00000000       0x12 Main.o
+ .comment       0x00000012       0x12 Menu.o
+ .comment       0x00000024       0x12 Input.o
+ .comment       0x00000036       0x12 fm.o
+ .comment       0x00000048       0x12 gp32_menu_header.o
+ .comment       0x0000005a       0x12 gp32_highlightbar.o
+ .comment       0x0000006c       0x12 gp32_menutile.o
+ .comment       0x0000007e       0x12 sn76496.o
+ .comment       0x00000090       0x12 gp32_snd.o
+ .comment       0x000000a2       0x12 unzip.o
+ .comment       0x000000b4       0x12 zip_old.o
+ .comment       0x000000c6       0x12 ioapi.o
+ .comment       0x000000d8       0x12 fileio.o
+ .comment       0x000000ea       0x12 mdrom_good.o
+ .comment       0x000000fc       0x12 rom_crc.o
+ .comment       0x0000010e       0x12 savestate.o
+ .comment       0x00000120       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(crc32.o)
+ .comment       0x00000132       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(deflate.o)
+ .comment       0x00000144       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_buttons.o)
+ .comment       0x00000156       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_cpuspeed.o)
+ .comment       0x00000168       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_filesys.o)
+ .comment       0x0000017a       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_grafik.o)
+ .comment       0x0000018c       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_setfont.o)
+ .comment       0x0000019e       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gzio.o)
+ .comment       0x000001b0       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inflate.o)
+ .comment       0x000001c2       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inftrees.o)
+ .comment       0x000001d4       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_fat.o)
+ .comment       0x000001e6       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_io.o)
+ .comment       0x000001f8       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_lpt.o)
+ .comment       0x0000020a       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_uni.o)
+ .comment       0x0000021c       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(trees.o)
+ .comment       0x0000022e       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(zutil.o)
+ .comment       0x00000240       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(adler32.o)
+ .comment       0x00000252       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(compress.o)
+ .comment       0x00000264       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(gp_8x8font.o)
+ .comment       0x00000276       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(inffast.o)
+ .comment       0x00000288       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_buf.o)
+ .comment       0x0000029a       0x12 C:/gp32_MrMirko/gp32_SDK/lib/libmirkoSDK.a(smf_conf.o)
+ .comment       0x000002ac       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(errno.o)
+ .comment       0x000002be       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fclose.o)
+ .comment       0x000002d0       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fdopen.o)
+ .comment       0x000002e2       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fflush.o)
+ .comment       0x000002f4       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(findfp.o)
+ .comment       0x00000306       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(flags.o)
+ .comment       0x00000318       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fopen.o)
+ .comment       0x0000032a       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fprintf.o)
+ .comment       0x0000033c       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fputc.o)
+ .comment       0x0000034e       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fread.o)
+ .comment       0x00000360       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(freer.o)
+ .comment       0x00000372       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fseek.o)
+ .comment       0x00000384       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fstatr.o)
+ .comment       0x00000396       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ftell.o)
+ .comment       0x000003a8       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwalk.o)
+ .comment       0x000003ba       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fwrite.o)
+ .comment       0x000003cc       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(impure.o)
+ .comment       0x000003de       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(makebuf.o)
+ .comment       0x000003f0       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(malloc.o)
+ .comment       0x00000402       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mallocr.o)
+ .comment       0x00000414       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcmp.o)
+ .comment       0x00000426       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memcpy.o)
+ .comment       0x00000438       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memset.o)
+ .comment       0x0000044a       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mlock.o)
+ .comment       0x0000045c       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(openr.o)
+ .comment       0x0000046e       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(rand.o)
+ .comment       0x00000480       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(realloc.o)
+ .comment       0x00000492       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reallocr.o)
+ .comment       0x000004a4       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(reent.o)
+ .comment       0x000004b6       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(refill.o)
+ .comment       0x000004c8       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(remove.o)
+ .comment       0x000004da       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sbrkr.o)
+ .comment       0x000004ec       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(sprintf.o)
+ .comment       0x000004fe       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(stdio.o)
+ .comment       0x00000510       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcat.o)
+ .comment       0x00000522       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcmp.o)
+ .comment       0x00000534       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strcpy.o)
+ .comment       0x00000546       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strlen.o)
+ .comment       0x00000558       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(strncasecmp.o)
+ .comment       0x0000056a       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(syscalls.o)
+ .comment       0x0000057c       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(toupper.o)
+ .comment       0x0000058e       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(unlinkr.o)
+ .comment       0x000005a0       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vfprintf.o)
+ .comment       0x000005b2       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(vsnprintf.o)
+ .comment       0x000005c4       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wbuf.o)
+ .comment       0x000005d6       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcrtomb.o)
+ .comment       0x000005e8       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wcsrtombs.o)
+ .comment       0x000005fa       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wctomb_r.o)
+ .comment       0x0000060c       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(writer.o)
+ .comment       0x0000061e       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(wsetup.o)
+ .comment       0x00000630       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(closer.o)
+ .comment       0x00000642       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(ctype_.o)
+ .comment       0x00000654       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(dtoa.o)
+ .comment       0x00000666       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(fvwrite.o)
+ .comment       0x00000678       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(locale.o)
+ .comment       0x0000068a       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(lseekr.o)
+ .comment       0x0000069c       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memchr.o)
+ .comment       0x000006ae       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(memmove.o)
+ .comment       0x000006c0       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(mprec.o)
+ .comment       0x000006d2       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(readr.o)
+ .comment       0x000006e4       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isinf.o)
+ .comment       0x000006f6       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(s_isnan.o)
+ .comment       0x00000708       0x12 /cygdrive/c/gp32_MrMirko/bin/../lib/gcc/arm-elf/3.4.0/../../../../arm-elf/lib/libc.a(callocr.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+OUTPUT(DrMD.elf elf32-littlearm)

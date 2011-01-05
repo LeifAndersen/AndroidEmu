@@ -1,0 +1,21 @@
+# This Makefile is very easy to use !
+# Only edit PRG and OBJS 
+# Dont touch anything else
+
+CC = arm-elf-gcc
+LD = arm-elf-gcc
+AS = arm-elf-as
+AR = arm-elf-ar
+
+OBJS = m68kcpu.o m68kops.o m68kopac.o m68kopdm.o m68kopnz.o
+
+SDKDIR   = C:/gp32_MrMirko/gp32_SDK
+LIBS      = -L$(SDKDIR)/lib -lmirkoSDK -lm
+LNKSCRIPT = $(SDKDIR)/lib/lnkscript
+INCLUDES  = -I$(SDKDIR)/lib.src/include 
+CFLAGS    = $(INCLUDES) -O2 -s -mtune=arm9tdmi
+
+m68k.a:	$(OBJS)
+	      ar -rs $@ $(OBJS)
+
+

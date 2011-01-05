@@ -1,0 +1,66 @@
+###############################################################################
+# Makefile for a Gizmondo application.
+###############################################################################
+
+# Change the line below to the name of your program
+PROGRAM =    DrMD
+
+# If you have any directories with include files, add them here with -I on
+# the front of each
+INCLUDES = -I . 
+
+# list all .c files here
+CFILES	=	Main.c  Menu.c savestate.c Input.c gp2x_menu_header.c gp2x_highlightbar.c gp2x_menutile.c \
+			fm.c sn76496.c unzip.c zip.c ioapi.c fileio.c giz_sdk_sdl.c \
+			rom_crc.c mdrom_good.c smsrom_good.c RenderSound.c 
+# ./m68k/m68k.a
+
+SFILES = 	DrMD_core.s DrSMS_core.s \
+			gp2x_sms_render_8.s gp2x_gg_render_8.s gp2x_md_render_8.s \
+			../DrZ80/DrZ80.s	../cyclone/Cyclone.s
+
+##############################################################################
+# You shouldn't need to change anything below here, really
+##############################################################################
+
+SDL_BASE = C:/cygwin/usr/local/arm-wince-pe/lib/GizSDL
+SDK_BASE = C:/cygwin/usr/local/arm-wince-pe/lib/KGSDK
+
+ALL_INCLUDES = -IC:/cygwin/usr/local/arm-wince-pe/include -I$(SDK_BASE)/include -I$(SDL_BASE)/include/SDL -I$(SDL_BASE)/include/SDL_mixer $(INCLUDES) 
+
+ALL_LIBS = -LC:/cygwin/usr/local/arm-wince-pe/lib -lzip -L$(SDK_BASE) -L$(SDL_BASE) -lSDL_mixer -lSDL -lKGSDK $(LIBS) 
+
+#CFLAGS     =  -D__GIZ__ -Wall -pipe -c -O2 -mcpu=arm920 -mtune=arm920t -ffast-math -funroll-loops -falign-jumps=2 -fno-strict-aliasing 
+
+CFLAGS     = -mcpu=arm920 -mtune=arm920t -O2 -msoft-float -ffast-math -fstrict-aliasing -mstructure-size-boundary=8 \
+					-fexpensive-optimizations -fweb -frename-registers -fomit-frame-pointer -falign-functions -finline -finline-functions \
+					-fno-builtin -fno-common -D__GIZ__ -D__SDL__
+
+SFLAGS     = $(CFLAGS)
+
+LDFLAGS = -static
+
+OFILES  =       $(SFILES:.s=.o) $(CFILES:.c=.o)
+
+CC = arm-wince-pe-gcc
+
+all:		$(PROGRAM).exe
+
+clean:
+	-rm -f $(OFILES) $(MAPFILE) $(PROGRAM)
+
+.PHONY: all clean
+
+%.o:	%.c
+	$(CC) $(ALL_INCLUDES) $(CFLAGS) -c $< -o $@
+
+%.o:	%.s
+	$(CC) $(ALL_INCLUDES) $(SFLAGS) -c $< -o $@
+
+$(PROGRAM)d.exe: $(OFILES)
+	$(CC)  $(OFILES) $(LDFLAGS) $(LIBDIRS) $(ALL_LIBS) -o $@
+
+$(PROGRAM).exe: $(PROGRAM)d.exe
+	arm-wince-pe-strip $(PROGRAM)d.exe -o $(PROGRAM).exe
+	cp $(PROGRAM).exe autorun.exe
+	

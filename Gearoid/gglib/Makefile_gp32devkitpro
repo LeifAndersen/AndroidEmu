@@ -1,0 +1,38 @@
+# This Makefile is very easy to use !
+# Only edit PRG and OBJS 
+# Dont touch anything else
+
+include $(DEVKITARM)/gp32_rules
+
+export LD	=	$(CC)
+
+AUTHOR	=	Reesy
+TITLE	=	DrMD v3
+
+PRG  = DrMD
+OFILES = Main.o Menu.o Input.o fm.o DrMD_core.o \
+       gp32_menu_header.o gp32_highlightbar.o gp32_menutile.o \
+       sn76496.o gp32_snd.o unzip.o zip_old.o \
+       ioapi.o fileio.o gp32_md_render_8.o gp32_md_render_16_small.o\
+       mdrom_good.o rom_crc.o ../DrZ80/DrZ80.o ../cyclone/Cyclone.o \
+	   savestate.o gp32_snd_irq.o
+
+SDKDIR   = C:/devkitPro/gp32_SDK
+LIBS      = -L$(SDKDIR)/lib -lmirkoSDK -lm
+INCLUDES  = -I$(SDKDIR)/lib.src/include -I$(SDKDIR)/lib.src/zlib/include
+CFLAGS    = $(INCLUDES) -D__GP32__ -D__EMU_MD__ -O2 -s -msoft-float -mtune=arm9tdmi \
+		-Wall -fomit-frame-pointer -ffast-math
+
+%.o:	%.c
+	$(CC) $(INCLUDES) $(CFLAGS) -c $< -o $@
+
+%.o:	%.s
+	$(CC) $(INCLUDES) $(CFLAGS) -c $< -o $@
+
+$(PRG).fxe	:	$(PRG).gxb
+
+$(PRG).gxb	:	$(PRG).elf
+
+$(PRG).elf	:	$(OFILES)
+
+

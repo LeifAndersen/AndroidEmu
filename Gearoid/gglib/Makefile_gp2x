@@ -1,0 +1,57 @@
+###############################################################################
+# Makefile for a GP32 application.
+###############################################################################
+
+# Change the line below to the name of your program
+PROGRAM =    DrMD
+
+# If you have any directories with include files, add them here with -I on
+# the front of each
+INCLUDES = -I . 
+
+# list all .c files here
+CFILES	=	Main.c squidgehack.c gp2x_sdk.c Menu.c savestate.c Input.c  \
+				fm.c sn76496.c unzip.c zip.c ioapi.c fileio.c  \
+				RenderSound.c  \
+				gp2x_menu_header.c gp2x_highlightbar.c gp2x_menutile.c
+
+SFILES = 	DrMD_core.s DrSMS_core.s \
+			gp2x_sms_render_8.s gp2x_gg_render_8.s gp2x_md_render_8.s \
+			../DrZ80/DrZ80.s ../cyclone/Cyclone.s myuname.s
+
+##############################################################################
+# You shouldn't need to change anything below here, really
+##############################################################################
+
+BASEFILES = $(GPSDK_HOME)/basefiles
+
+ALL_INCLUDES = -IC:/devkitGP2X/include -IC:/devkitGP2X/sysroot/usr/include $(INCLUDES)
+ALL_LIBS = -LC:/devkitGP2X/lib $(LIBS)
+
+CFLAGS     =  -D__GP2X__ -D__EMU_MD__ -D__EMU_SMS__ -static -g -O3
+
+LDFLAGS = -lpthread -lz
+
+OFILES  =       $(SFILES:.s=.o) $(CFILES:.c=.o)
+
+CC = arm-linux-gcc
+
+all:		$(PROGRAM).gpe
+
+clean:
+	-rm -f $(OFILES) $(MAPFILE) $(PROGRAM)
+
+.PHONY: all clean
+
+%.o:	%.c
+	$(CC) $(ALL_INCLUDES) $(CFLAGS) -c $< -o $@
+
+%.o:	%.s
+	$(CC) $(ALL_INCLUDES) $(CFLAGS) -c $< -o $@
+
+$(PROGRAM)d.gpe: $(OFILES)
+	$(CC) -static $(OFILES) $(LDFLAGS) $(LIBDIRS) $(ALL_LIBS) -o $@
+
+$(PROGRAM).gpe: $(PROGRAM)d.gpe
+	arm-linux-strip $(PROGRAM)d.gpe -o $(PROGRAM).gpe
+	
