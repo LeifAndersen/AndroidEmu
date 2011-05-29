@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Build;
 import android.view.SurfaceHolder;
+import java.io.IOException;
 import java.nio.Buffer;
 
 public class Emulator {
@@ -27,6 +28,7 @@ public class Emulator {
 
 	private static String engineLib;
 	private static Emulator emulator;
+	private Thread thread;
 	private String romFileName;
 	private boolean cheatsEnabled;
 	private Cheats cheats;
@@ -42,26 +44,27 @@ public class Emulator {
 			loadEngine(libDir, engine);
 		}
 
-		if (emulator == null) {
-			emulator = new Emulator();
-			emulator.initialize(libDir, Integer.parseInt(Build.VERSION.SDK));
-		}
+		if (emulator == null)
+			emulator = new Emulator(libDir);
 		return emulator;
-	}
-
-	public static void destroyInstance() {
-		emulator.cleanUp();
-		emulator = null;
 	}
 
 	public static Emulator getInstance() {
 		return emulator;
 	}
 
-	private Emulator() {
+	private Emulator(String libDir) {
+		initialize(libDir, Integer.parseInt(Build.VERSION.SDK));
+
+		thread = new Thread() {
+			public void run() {
+				nativeRun();
+			}
+		};
+		thread.start();
 	}
 
-	public void enableCheats(boolean enable) {
+	public final void enableCheats(boolean enable) {
 		cheatsEnabled = enable;
 		if (romFileName == null)
 			return;
@@ -76,10 +79,6 @@ public class Emulator {
 
 	public final Cheats getCheats() {
 		return cheats;
-	}
-
-	public final boolean isROMLoaded() {
-		return (romFileName != null);
 	}
 
 	public final boolean loadROM(String file) {
@@ -99,6 +98,7 @@ public class Emulator {
 		romFileName = null;
 	}
 
+	public native void setFrameUpdateListener(FrameUpdateListener l);
 	public native void setSurface(SurfaceHolder surface);
 	public native void setSurfaceRegion(int x, int y, int w, int h);
 
@@ -113,7 +113,7 @@ public class Emulator {
 
 	private static native boolean loadEngine(String libDir, String lib);
 	private native boolean initialize(String libDir, int sdk);
-	private native void cleanUp();
+	private native void nativeRun();
 	private native boolean nativeLoadROM(String file);
 	private native void nativeUnloadROM();
 	public native void reset();
@@ -130,5 +130,10 @@ public class Emulator {
 
 	public void setOption(String name, int value) {
 		setOption(name, Integer.toString(value));
+	}
+
+	public interface FrameUpdateListener {
+		int onFrameUpdate(int keys)
+				throws IOException, InterruptedException;
 	}
 }

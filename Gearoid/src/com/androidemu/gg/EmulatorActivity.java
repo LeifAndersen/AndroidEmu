@@ -25,11 +25,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.androidemu.Emulator;
-import com.androidemu.EmulatorView;
-import com.androidemu.EmuMedia;
-import com.androidemu.gg.input.*;
-
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -37,6 +32,11 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+
+import com.androidemu.Emulator;
+import com.androidemu.EmulatorView;
+import com.androidemu.EmuMedia;
+import com.androidemu.gg.input.*;
 
 public class EmulatorActivity extends Activity implements
 		SharedPreferences.OnSharedPreferenceChangeListener,
@@ -61,8 +61,6 @@ public class EmulatorActivity extends Activity implements
 	private static final int GAMEPAD_DIRECTION =
 			(GAMEPAD_UP_DOWN | GAMEPAD_LEFT_RIGHT);
 
-	private static Intent newIntent;
-
 	private Emulator emulator;
 	private EmulatorView emulatorView;
 	private Rect surfaceRegion = new Rect();
@@ -82,6 +80,8 @@ public class EmulatorActivity extends Activity implements
 	private int fastForwardKey;
 	private int screenshotKey;
 
+	private SharedPreferences sharedPrefs;
+	private Intent newIntent;
 	private MediaScanner mediaScanner;
 
 	@Override
@@ -95,8 +95,8 @@ public class EmulatorActivity extends Activity implements
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
-		SharedPreferences prefs =
-				PreferenceManager.getDefaultSharedPreferences(this);
+		sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+		final SharedPreferences prefs = sharedPrefs;
 		prefs.registerOnSharedPreferenceChangeListener(this);
 
 		emulator = Emulator.createInstance(getApplicationContext(),
@@ -140,24 +140,29 @@ public class EmulatorActivity extends Activity implements
 			onSharedPreferenceChanged(prefs, key);
 		loadKeyBindings(prefs);
 
-		if (emulator.isROMLoaded()) {
-			emulatorView.setActualSize(
-					emulator.getVideoWidth(), emulator.getVideoHeight());
-
-		} else if (!loadROM()) {
+		if (!loadROM()) {
 			finish();
 			return;
 		}
-
 		startService(new Intent(this, EmulatorService.class).
 				setAction(EmulatorService.ACTION_FOREGROUND));
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+
+		if (emulator != null)
+			emulator.unloadROM();
+
+		stopService(new Intent(this, EmulatorService.class));
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
 
-		emulator.pause();
+		pauseEmulator();
 		if (sensor != null)
 			sensor.setGameKeyListener(null);
 	}
@@ -168,6 +173,15 @@ public class EmulatorActivity extends Activity implements
 
 		if (sensor != null)
 			sensor.setGameKeyListener(this);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+
+		pauseEmulator();
+		setFlipScreen(sharedPrefs, newConfig);
+		resumeEmulator();
 	}
 
 	@Override
@@ -193,7 +207,7 @@ public class EmulatorActivity extends Activity implements
 
 		newIntent = intent;
 
-		emulator.pause();
+		pauseEmulator();
 		showDialog(DIALOG_REPLACE_GAME);
 	}
 
@@ -232,7 +246,7 @@ public class EmulatorActivity extends Activity implements
 			return true;
 
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			emulator.pause();
+			pauseEmulator();
 			showDialog(DIALOG_QUIT_GAME);
 			return true;
 		}
@@ -250,7 +264,7 @@ public class EmulatorActivity extends Activity implements
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		super.onPrepareOptionsMenu(menu);
-		emulator.pause();
+		pauseEmulator();
 
 		menu.findItem(R.id.menu_fast_forward).setTitle(
 				inFastForward ? R.string.no_fast_forward :
@@ -307,16 +321,6 @@ public class EmulatorActivity extends Activity implements
 		}
 	}
 
-	@Override
-	public void finish() {
-		super.finish();
-
-		if (emulator != null)
-			emulator.unloadROM();
-
-		stopService(new Intent(this, EmulatorService.class));
-	}
-
 	public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
 		if (key.startsWith("gamepad")) {
 			loadKeyBindings(prefs);
@@ -330,12 +334,7 @@ public class EmulatorActivity extends Activity implements
 			getWindow().setAttributes(attrs);
 
 		} else if ("flipScreen".equals(key)) {
-			flipScreen = false;
-			if (getResources().getConfiguration().orientation ==
-					Configuration.ORIENTATION_LANDSCAPE)
-				flipScreen = prefs.getBoolean(key, false);
-
-			emulator.setOption(key, flipScreen);
+			setFlipScreen(prefs, getResources().getConfiguration());
 
 		} else if ("fastForwardSpeed".equals(key)) {
 			String value = prefs.getString(key, "2x");
@@ -507,6 +506,24 @@ public class EmulatorActivity extends Activity implements
 		return false;
 	}
 
+	private void pauseEmulator() {
+		emulator.pause();
+	}
+
+	private void resumeEmulator() {
+		if (hasWindowFocus())
+			emulator.resume();
+	}
+
+	private void setFlipScreen(SharedPreferences prefs, Configuration config) {
+		if (config.orientation == Configuration.ORIENTATION_LANDSCAPE)
+			flipScreen = prefs.getBoolean("flipScreen", false);
+		else
+			flipScreen = false;
+
+		emulator.setOption("flipScreen", flipScreen);
+	}
+
 	private int flipGameKeys(int keys) {
 		int newKeys = (keys & ~GAMEPAD_DIRECTION);
 		if ((keys & Emulator.GAMEPAD_LEFT) != 0)
@@ -597,6 +614,10 @@ public class EmulatorActivity extends Activity implements
 				create();
 	}
 
+	private String getROMFilePath() {
+		return getIntent().getData().getPath();
+	}
+
 	private boolean isROMSupported(String file) {
 		file = file.toLowerCase();
 
@@ -610,7 +631,7 @@ public class EmulatorActivity extends Activity implements
 	}
 
 	private boolean loadROM() {
-		String path = getIntent().getData().getPath();
+		String path = getROMFilePath();
 
 		if (!isROMSupported(path)) {
 			Toast.makeText(this, R.string.rom_not_supported,
@@ -624,15 +645,13 @@ public class EmulatorActivity extends Activity implements
 			finish();
 			return false;
 		}
-
 		// reset fast-forward on ROM load
 		inFastForward = false;
 
 		emulatorView.setActualSize(
 				emulator.getVideoWidth(), emulator.getVideoHeight());
 
-		if (PreferenceManager.getDefaultSharedPreferences(this).
-				getBoolean("quickLoadOnStart", true))
+		if (sharedPrefs.getBoolean("quickLoadOnStart", true))
 			quickLoad();
 		return true;
 	}
@@ -651,10 +670,9 @@ public class EmulatorActivity extends Activity implements
 	}
 
 	private void setGameSpeed(float speed) {
-		emulator.pause();
+		pauseEmulator();
 		emulator.setOption("gameSpeed", Float.toString(speed));
-		if (hasWindowFocus())
-			emulator.resume();
+		resumeEmulator();
 	}
 
 	private void onFastForward() {
@@ -671,7 +689,7 @@ public class EmulatorActivity extends Activity implements
 		String name = Long.toString(System.currentTimeMillis()) + ".png";
 		File file = new File(dir, name);
 
-		emulator.pause();
+		pauseEmulator();
 
 		FileOutputStream out = null;
 		try {
@@ -694,12 +712,11 @@ public class EmulatorActivity extends Activity implements
 			}
 		} catch (IOException e) {}
 
-		if (hasWindowFocus())
-			emulator.resume();
+		resumeEmulator();
 	}
 
 	private void saveState(String fileName) {
-		emulator.pause();
+		pauseEmulator();
 
 		ZipOutputStream out = null;
 		try {
@@ -718,8 +735,7 @@ public class EmulatorActivity extends Activity implements
 		} catch (Exception e) {}
 
 		emulator.saveState(fileName);
-		if (hasWindowFocus())
-			emulator.resume();
+		resumeEmulator();
 	}
 
 	private void loadState(String fileName) {
@@ -740,8 +756,7 @@ public class EmulatorActivity extends Activity implements
 	}
 
 	private String getQuickSlotFileName() {
-		return StateSlotsActivity.getSlotFileName(
-				getIntent().getData().getPath(), 0);
+		return StateSlotsActivity.getSlotFileName(getROMFilePath(), 0);
 	}
 
 	private void quickSave() {

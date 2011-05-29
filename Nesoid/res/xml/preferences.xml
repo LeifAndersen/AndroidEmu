@@ -215,11 +215,14 @@
 
 	<PreferenceScreen android:title="@string/other_settings">
 		<PreferenceCategory android:title="@string/cheating">
-			<CheckBoxPreference android:key="enableGameGenie"
-					android:title="@string/enable_game_genie"/>
+			<CheckBoxPreference android:key="enableCheats"
+					android:title="@string/enable_cheats"
+					android:defaultValue="true"/>
 		</PreferenceCategory>
 
 		<PreferenceCategory android:title="@string/bios">
+			<CheckBoxPreference android:key="enableGameGenie"
+					android:title="@string/enable_game_genie"/>
 			<PreferenceScreen android:key="gameGenieRom"
 					android:title="@string/game_genie_rom"
 					android:dependency="enableGameGenie"/>

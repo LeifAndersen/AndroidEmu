@@ -2,6 +2,7 @@ package com.androidemu.gg;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,10 +17,15 @@ import java.io.File;
 
 public class MainActivity extends FileChooser {
 
-	private static final int DIALOG_SHORTCUT = 1;
-
 	private static final Uri HELP_URI = Uri.parse(
 			"file:///android_asset/faq.html");
+
+	private static final String ROM_BUDDY_PACKAGE = "com.momojo.rombud";
+	private static final Uri ROM_BUDDY_URI = Uri.parse(
+			"market://details?id=" + ROM_BUDDY_PACKAGE +
+					"&referrer=utm_source%3Dyong%26utm_medium%3Dlink%26utm_campaign%3Dcross%2520marketing");
+
+	private static final int DIALOG_SHORTCUT = 1;
 
 	private static Intent emulatorIntent;
 	private SharedPreferences settings;
@@ -49,6 +55,19 @@ public class MainActivity extends FileChooser {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+		case R.id.menu_rom_buddy:
+			Intent intent = getPackageManager().
+					getLaunchIntentForPackage(ROM_BUDDY_PACKAGE);
+			if (intent == null)
+				intent = new Intent(Intent.ACTION_VIEW, ROM_BUDDY_URI);
+			else
+				intent.putExtra("com.momojo.rombud.system", 5);
+
+			try {
+				startActivity(intent);
+			} catch (ActivityNotFoundException e) {}
+			return true;
+
 		case R.id.menu_search_roms:
 			startActivity(EmulatorSettings.getSearchROMIntent());
 			return true;

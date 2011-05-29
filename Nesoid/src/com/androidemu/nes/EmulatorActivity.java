@@ -156,6 +156,7 @@ public class EmulatorActivity extends Activity implements
 			"enableVKeypad",
 			"scalingMode",
 			"aspectRatio",
+			"enableCheats",
 			"orientation",
 			"useInputMethod",
 			"quickLoad",
@@ -321,6 +322,8 @@ public class EmulatorActivity extends Activity implements
 		menu.findItem(R.id.menu_netplay_sync).setVisible(netplay);
 		menu.findItem(R.id.menu_fast_forward).setVisible(!netplay);
 
+		menu.findItem(R.id.menu_cheats).setEnabled(
+				emulator.getCheats() != null);
 		menu.findItem(R.id.menu_fast_forward).setTitle(
 				inFastForward ? R.string.no_fast_forward :
 						R.string.fast_forward);
@@ -360,6 +363,10 @@ public class EmulatorActivity extends Activity implements
 
 		case R.id.menu_screenshot:
 			onScreenshot();
+			return true;
+
+		case R.id.menu_cheats:
+			startActivity(new Intent(this, CheatsActivity.class));
 			return true;
 
 		case R.id.menu_save_state:
@@ -552,6 +559,9 @@ public class EmulatorActivity extends Activity implements
 					ratio *= dpiRatio;
 			}
 			emulatorView.setAspectRatio(ratio);
+
+		} else if ("enableCheats".equals(key)) {
+			emulator.enableCheats(prefs.getBoolean(key, true));
 
 		} else if ("orientation".equals(key)) {
 			setRequestedOrientation(getScreenOrientation(

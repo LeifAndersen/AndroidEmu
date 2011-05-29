@@ -128,9 +128,8 @@ public class StateSlotsActivity extends ListActivity {
 	private String getSlotName(int slot) {
 		if (slot == 0)
 			return getString(R.string.slot_quick);
-
-		return getString(R.string.slot_nth).
-				replace("%1", Integer.toString(slot));
+		else
+			return getString(R.string.slot_nth, slot);
 	}
 
 	private class SaveSlotAdapter extends BaseAdapter {

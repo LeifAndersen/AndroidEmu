@@ -1,13 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		package="com.androidemu.gg"
-		android:versionCode="22"
-		android:versionName="1.7"
-		android:installLocation="auto">
+		android:versionCode="23"
+		android:versionName="1.7.2"
+		android:installLocation="preferExternal">
 
 	<uses-sdk android:minSdkVersion="3" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 	<application android:label="@string/app_label"
 			android:icon="@drawable/app_icon">
@@ -31,7 +31,8 @@
 		</activity-alias>
 
 		<activity android:name="FileChooser" />
-		<activity android:name="StateSlotsActivity" />
+		<activity android:name="StateSlotsActivity"
+				android:theme="@android:style/Theme.Dialog" />
 		<activity android:name="KeyProfilesActivity"/>
 		<activity android:name="HelpActivity" />
 
@@ -40,12 +41,13 @@
 		<activity android:name="EmulatorActivity"
 				android:process=":emulator"
 				android:launchMode="singleTask"
-				android:configChanges="keyboardHidden">
+				android:configChanges="orientation|keyboardHidden">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<data android:scheme="file" />
-				<data android:mimeType="application/*" />
+				<data android:mimeType="application/zip" />
+				<data android:mimeType="application/octet-stream" />
 			</intent-filter>
 		</activity>
 

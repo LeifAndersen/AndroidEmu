@@ -3,32 +3,34 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:androidemu="http://androidemu.com/apk/res/android">
 
-	<PreferenceCategory android:title="@string/audio_settings">
-		<CheckBoxPreference android:key="soundEnabled"
-				android:title="@string/enable_sound"
-				android:defaultValue="true"/>
+	<PreferenceScreen android:title="@string/audio_video_settings">
+		<PreferenceCategory android:title="@string/audio_settings">
+			<CheckBoxPreference android:key="soundEnabled"
+					android:title="@string/enable_sound"
+					android:defaultValue="true"/>
 
-		<com.androidemu.gg.SeekBarPreference
-				android:key="soundVolume"
-				android:dependency="soundEnabled"
-				android:title="@string/sound_volume"
-				android:defaultValue="100"/>
-	</PreferenceCategory>
+			<com.androidemu.gg.SeekBarPreference
+					android:key="soundVolume"
+					android:dependency="soundEnabled"
+					android:title="@string/sound_volume"
+					android:defaultValue="100"/>
+		</PreferenceCategory>
 
-	<PreferenceCategory android:title="@string/video_settings">
-		<ListPreference android:key="scalingMode"
-				android:title="@string/scaling_mode"
-				android:entries="@array/scaling_mode_entries"
-				android:entryValues="@array/scaling_mode_entryvalues"
-				android:defaultValue="proportional"/>
+		<PreferenceCategory android:title="@string/video_settings">
+			<ListPreference android:key="scalingMode"
+					android:title="@string/scaling_mode"
+					android:entries="@array/scaling_mode_entries"
+					android:entryValues="@array/scaling_mode_entryvalues"
+					android:defaultValue="proportional"/>
+		</PreferenceCategory>
 
-		<ListPreference android:key="fastForwardSpeed"
-				android:title="@string/fast_forward_speed"
-				android:entries="@array/fast_forward_speed_entryvalues"
-				android:entryValues="@array/fast_forward_speed_entryvalues"
-				android:defaultValue="2x"/>
+		<PreferenceCategory android:title="@string/frame_skip_settings">
+			<ListPreference android:key="fastForwardSpeed"
+					android:title="@string/fast_forward_speed"
+					android:entries="@array/fast_forward_speed_entryvalues"
+					android:entryValues="@array/fast_forward_speed_entryvalues"
+					android:defaultValue="2x"/>
 
-		<PreferenceScreen android:title="@string/frame_skip_settings">
 			<ListPreference android:key="frameSkipMode"
 					android:title="@string/frame_skip_mode"
 					android:entries="@array/frame_skip_entries"
@@ -48,10 +50,10 @@
 					android:entries="@array/refresh_rate_entries"
 					android:entryValues="@array/refresh_rate_entryvalues"
 					android:defaultValue="default"/>
-		</PreferenceScreen>
-	</PreferenceCategory>
+		</PreferenceCategory>
+	</PreferenceScreen>
 
-	<PreferenceCategory android:title="@string/input_settings">
+	<PreferenceScreen android:title="@string/input_settings">
 		<PreferenceScreen android:key="keyMappings"
 				android:title="@string/key_mappings">
 
@@ -151,54 +153,56 @@
 				android:title="@string/sensor_sensitivity"
 				androidemu:maxValue="9"
 				android:defaultValue="7"/>
-	</PreferenceCategory>
+	</PreferenceScreen>
 
-	<PreferenceCategory android:title="@string/user_settings">
-		<CheckBoxPreference android:key="flipScreen"
-				android:title="@string/flip_screen"
-				android:summary="@string/flip_screen_summary"/>
-		<ListPreference android:key="orientation"
-				android:title="@string/orientation"
-				android:summary="@string/orientation_summary"
-				android:entries="@array/orientation_entries"
-				android:entryValues="@array/orientation_entryvalues"
-				android:defaultValue="unspecified"/>
-		<CheckBoxPreference android:key="fullScreenMode"
-				android:title="@string/full_screen_mode"
-				android:summary="@string/full_screen_mode_summary"
-				android:defaultValue="true"/>
-		<CheckBoxPreference android:key="quickLoadOnStart"
-				android:title="@string/quick_load_on_start"
-				android:summary="@string/quick_load_on_start_summary"
-				android:defaultValue="true"/>
+	<PreferenceScreen android:title="@string/other_settings">
+		<PreferenceCategory android:title="@string/user_settings">
+			<CheckBoxPreference android:key="flipScreen"
+					android:title="@string/flip_screen"
+					android:summary="@string/flip_screen_summary"/>
+			<ListPreference android:key="orientation"
+					android:title="@string/orientation"
+					android:summary="@string/orientation_summary"
+					android:entries="@array/orientation_entries"
+					android:entryValues="@array/orientation_entryvalues"
+					android:defaultValue="unspecified"/>
+			<CheckBoxPreference android:key="fullScreenMode"
+					android:title="@string/full_screen_mode"
+					android:summary="@string/full_screen_mode_summary"
+					android:defaultValue="true"/>
+			<CheckBoxPreference android:key="quickLoadOnStart"
+					android:title="@string/quick_load_on_start"
+					android:summary="@string/quick_load_on_start_summary"
+					android:defaultValue="true"/>
 
-		<CheckBoxPreference android:key="useInputMethod"
-				android:title="@string/use_input_method"
-				android:summary="@string/use_input_method_summary"/>
+			<CheckBoxPreference android:key="useInputMethod"
+					android:title="@string/use_input_method"
+					android:summary="@string/use_input_method_summary"/>
 
-		<PreferenceScreen android:title="@string/shortcut_keys">
-			<com.androidemu.gg.KeyPreference
-					android:key="quickLoad"
-					android:title="@string/quick_load"/>
-			<com.androidemu.gg.KeyPreference
-					android:key="quickSave"
-					android:title="@string/quick_save"/>
-			<com.androidemu.gg.KeyPreference
-					android:key="fastForward"
-					android:title="@string/fast_forward"/>
-			<com.androidemu.gg.KeyPreference
-					android:key="screenshot"
-					android:title="@string/screenshot"/>
-		</PreferenceScreen>
-	</PreferenceCategory>
+			<PreferenceScreen android:title="@string/shortcut_keys">
+				<com.androidemu.gg.KeyPreference
+						android:key="quickLoad"
+						android:title="@string/quick_load"/>
+				<com.androidemu.gg.KeyPreference
+						android:key="quickSave"
+						android:title="@string/quick_save"/>
+				<com.androidemu.gg.KeyPreference
+						android:key="fastForward"
+						android:title="@string/fast_forward"/>
+				<com.androidemu.gg.KeyPreference
+						android:key="screenshot"
+						android:title="@string/screenshot"/>
+			</PreferenceScreen>
+		</PreferenceCategory>
+	</PreferenceScreen>
 
-	<PreferenceCategory android:title="@string/about">
-		<PreferenceScreen android:key="appAbout"
-				android:title="@string/app_about"/>
-		<PreferenceScreen android:key="appUpgrade"
-				android:title="@string/app_upgrade"/>
+	<PreferenceScreen android:title="@string/app_about">
+		<PreferenceScreen android:key="about"
+				android:title="@string/about"/>
+		<PreferenceScreen android:key="upgrade"
+				android:title="@string/upgrade"/>
 		<PreferenceScreen android:key="searchRoms"
 				android:title="@string/search_roms"/>
-	</PreferenceCategory>
+	</PreferenceScreen>
 
 </PreferenceScreen>

@@ -50,6 +50,7 @@
 	<string name="screenshot_saved">Screenshot saved to Gallery.</string>
 	<string name="save_state">Save</string>
 	<string name="load_state">Load</string>
+	<string name="cheats">Cheats</string>
 	<string name="close">Close</string>
 
 	<string name="connection_closed">Remote disconnected.</string>
@@ -79,6 +80,15 @@
 	<string name="title_paired_devices">Paired Devices</string>
 	<string name="title_other_devices">Other Available Devices</string>
 	<string name="button_scan">Scan for devices</string>
+
+	<!-- Cheats -->
+	<string name="no_cheats_help">"You haven't entered any cheats yet.\n\nTo add cheats, press <font fgcolor="#ffffffff"><b>Menu</b></font> and then <font fgcolor="#ffffffff"><b>New cheat</b></font>. Cheat codes can be:\n
+		\n<li><font fgcolor="#ffffffff"><b>Game Genie</b></font> (eg. SLAIUZ)</li>"
+	</string>
+	<string name="new_cheat">New cheat</string>
+	<string name="cheat_code">Code:</string>
+	<string name="cheat_name">Name (Optional):</string>
+	<string name="invalid_cheat_code">Cheat code is invalid!</string>
 
 	<!-- Settings -->
 	<string name="audio_video_settings">Audio &amp; video settings</string>
@@ -143,6 +153,7 @@
 	<string name="auto_sync_client_interval">Auto sync interval</string>
 	<string name="other_settings">Other settings</string>
 	<string name="cheating">Cheating</string>
+	<string name="enable_cheats">Enable cheats</string>
 	<string name="enable_game_genie">Enable Game Genie</string>
 	<string name="bios">BIOS</string>
 	<string name="game_genie_rom">Game Genie</string>

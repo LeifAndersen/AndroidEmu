@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		package="com.androidemu.gbc"
-		android:versionCode="28"
-		android:versionName="1.8.1"
-		android:installLocation="auto">
+		android:versionCode="32"
+		android:versionName="1.8.5"
+		android:installLocation="preferExternal">
 
 	<uses-sdk android:minSdkVersion="3" />
 

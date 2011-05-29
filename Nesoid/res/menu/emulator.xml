@@ -27,6 +27,10 @@
 	<item android:id="@+id/menu_fast_forward"
 			android:icon="@drawable/ic_menu_fast_forward" />
 
+	<item android:id="@+id/menu_cheats"
+			android:title="@string/cheats"
+			android:icon="@android:drawable/ic_menu_view" />
+
 	<item android:id="@+id/menu_netplay_connect"
 			android:title="@string/netplay_connect"
 			android:icon="@drawable/ic_menu_netplay">

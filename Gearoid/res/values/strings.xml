@@ -28,7 +28,7 @@
 
 	<!-- state slots -->
 	<string name="slot_quick">Quick</string>
-	<string name="slot_nth">Slot %1</string>
+	<string name="slot_nth">Slot %1$d</string>
 	<string name="slot_empty">&lt;empty&gt;</string>
 
 	<!-- Menu -->
@@ -50,6 +50,7 @@
 	<string name="save_profile">Save profile</string>
 
 	<!-- Settings -->
+	<string name="audio_video_settings">Audio &amp; video settings</string>
 	<string name="audio_settings">Audio settings</string>
 	<string name="enable_sound">Enable sound</string>
 	<string name="sound_volume">Sound volume</string>
@@ -90,6 +91,7 @@
 	<string name="trackball_sensitivity">Trackball sensitivity</string>
 	<string name="enable_sensor">Sensor as left/right</string>
 	<string name="sensor_sensitivity">Sensor sensitivity</string>
+	<string name="other_settings">Other settings</string>
 	<string name="user_settings">User settings</string>
 	<string name="flip_screen">Screen upside-down</string>
 	<string name="flip_screen_summary">Useful if d-pad is on the right side, but you want it on the left side</string>
@@ -101,9 +103,9 @@
 	<string name="quick_load_on_start_summary">Auto load game state on ROM start</string>
 	<string name="use_input_method">Use input method</string>
 	<string name="use_input_method_summary">Check this to enable special input device (eg. bluetooth gamepad)</string>
-	<string name="about">About</string>
 	<string name="app_about">About Gearoid</string>
-	<string name="app_upgrade">Upgrade Gearoid</string>
+	<string name="about">About</string>
+	<string name="upgrade">Upgrade</string>
 
 	<string name="press_key_prompt">Press a hardware key...</string>
 	<string name="key_none">&lt;none&gt;</string>

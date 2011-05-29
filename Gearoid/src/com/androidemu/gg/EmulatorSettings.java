@@ -27,7 +27,7 @@ public class EmulatorSettings extends PreferenceActivity {
 			"file:///android_asset/about.html");
 	private static final String MARKET_URI = "market://details?id=";
 	private static final String GAME_GRIPPER_URI = 
-			"http://www.game-gripper.com";
+			"https://sites.google.com/site/gamegripper";
 
 	private static final int REQUEST_LOAD_KEY_PROFILE = 1;
 	private static final int REQUEST_SAVE_KEY_PROFILE = 2;
@@ -76,7 +76,8 @@ public class EmulatorSettings extends PreferenceActivity {
 
 	static {
 		final int n = gameKeys.length;
-		if (gameKeysPref.length != n || gameKeysName.length != n)
+		if (gameKeysPref.length != n ||
+				gameKeysName.length != n)
 			throw new AssertionError("Key configurations are not consistent");
 	}
 
@@ -144,9 +145,9 @@ public class EmulatorSettings extends PreferenceActivity {
 					setSummary(R.string.multitouch_unsupported);
 		}
 
-		findPreference("appAbout").setIntent(new Intent(
+		findPreference("about").setIntent(new Intent(
 				this, HelpActivity.class).setData(ABOUT_URI));
-		findPreference("appUpgrade").setIntent(new Intent(
+		findPreference("upgrade").setIntent(new Intent(
 				Intent.ACTION_VIEW, Uri.parse(MARKET_URI + getPackageName())));
 		findPreference("searchRoms").setIntent(getSearchROMIntent());
 

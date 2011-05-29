@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		package="com.androidemu.gens"
-		android:versionCode="57"
-		android:versionName="2.4"
+		android:versionCode="60"
+		android:versionName="2.4.3"
 		android:installLocation="preferExternal">
 
 	<uses-sdk android:minSdkVersion="3" />

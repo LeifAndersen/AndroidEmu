@@ -1,6 +1,7 @@
 package com.androidemu;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -11,7 +12,6 @@ public class EmuMedia {
 
 	private static SurfaceHolder holder;
 	private static Rect region = new Rect();
-	private static Rect dirty = new Rect();
 	private static AudioTrack track;
 	private static Emulator.OnFrameDrawnListener onFrameDrawnListener;
 	private static float volume = AudioTrack.getMaxVolume();
@@ -37,8 +37,9 @@ public class EmuMedia {
 	}
 
 	static void bitBlt(int[] image, boolean flip) {
-		dirty.set(region);
-		Canvas canvas = holder.lockCanvas(dirty);
+		// Fill background
+		Canvas canvas = holder.lockCanvas();
+		canvas.drawColor(Color.BLACK);
 		if (flip)
 			canvas.rotate(180, canvas.getWidth() / 2, canvas.getHeight() / 2);
 
