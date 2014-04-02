@@ -4,7 +4,7 @@
 		android:versionName="2.5"
 		android:installLocation="preferExternal">
 
-	<uses-sdk android:minSdkVersion="3" />
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="10"/>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -14,9 +14,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 	<application android:label="@string/app_label"
-			android:icon="@drawable/app_icon">
+			android:icon="@drawable/app_icon" android:hardwareAccelerated="true">
 
-		<activity android:name="MainActivity"
+		<activity android:name="com.androidemu.nes.NESActivity"
 				android:configChanges="orientation|keyboardHidden">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
 		</activity>
 
 		<activity-alias android:name="CreateShortcuts"
-				android:targetActivity="MainActivity"
+				android:targetActivity="com.androidemu.nes.NESActivity"
 				android:label="@string/launcher_shortcut_name">
 			<intent-filter>
 				<action android:name="android.intent.action.CREATE_SHORTCUT" />
@@ -34,19 +34,14 @@
 			</intent-filter>
 		</activity-alias>
 
-		<activity android:name="FileChooser" />
-		<activity android:name="StateSlotsActivity"
-				android:theme="@android:style/Theme.Dialog" />
-		<activity android:name="KeyProfilesActivity"/>
-		<activity android:name="HelpActivity" />
-		<activity android:name="DeviceListActivity"
-				android:theme="@android:style/Theme.Dialog"
+		<activity android:name="StateSlotsActivity" android:theme="@android:style/Theme.Dialog" />
+		<activity android:name="DeviceListActivity" android:theme="@android:style/Theme.Dialog"
 				android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="KeyProfilesActivity"/>
 
-		<activity android:name="CheatsActivity" android:process=":emulator"/>
 		<activity android:name="EmulatorSettings" android:process=":emulator"/>
 
-		<activity android:name="EmulatorActivity"
+		<activity android:name="com.androidemu.EmulatorActivity"
 				android:process=":emulator"
 				android:launchMode="singleTask"
 				android:configChanges="orientation|keyboardHidden">
@@ -59,7 +54,11 @@
 			</intent-filter>
 		</activity>
 
-		<service android:name="EmulatorService" android:process=":emulator"/>
+		<!-- common components - will be omitted after manifest merging support -->
+		<activity android:name="com.androidemu.FileChooser" />
+		<activity android:name="com.androidemu.HelpActivity" />
+		<activity android:name="com.androidemu.CheatsActivity" android:process=":emulator"/>
+		<service android:name="com.androidemu.EmulatorService" android:process=":emulator"/>
 
 	</application>
 </manifest>

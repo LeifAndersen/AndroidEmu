@@ -76,4 +76,71 @@
 		<item>45</item>
 		<item>60</item>
 	</string-array>
+	
+	<string-array name="exit_game_options">
+		<item>Back to game</item>
+		<item>Save and close</item>
+		<item>Close</item>
+	</string-array>
+
+	<string-array name="scaling_mode_entries">
+		<item>Stretched</item>
+		<item>Scaled</item>
+		<item>2x</item>
+		<item>Original</item>
+	</string-array>
+
+	<string-array name="aspect_ratio_entries">
+		<item>Default</item>
+		<item>4:3 (TV)</item>
+		<item>5:4</item>
+		<item>16:10</item>
+		<item>16:9</item>
+	</string-array>
+
+	<string-array name="frame_skip_entries">
+		<item>Automatic</item>
+		<item>Manual</item>
+	</string-array>
+
+	<string-array name="refresh_rate_entries">
+		<item>Default</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+		<item>60</item>
+	</string-array>
+
+	<string-array name="second_controller_entries">
+		<item>None</item>
+		<item>Zapper (Light gun)</item>
+		<item>Gamepad</item>
+	</string-array>
+
+	<string-array name="vkeypad_size_entries">
+		<item>Large</item>
+		<item>Medium</item>
+		<item>Small</item>
+	</string-array>
+
+	<string-array name="vkeypad_layout_entries">
+		<item>Bottom + Bottom</item>
+		<item>Bottom + Top</item>
+		<item>Top + Bottom</item>
+		<item>Top + Top</item>
+	</string-array>
+
+	<string-array name="orientation_entries">
+		<item>Unspecified</item>
+		<item>Landscape</item>
+		<item>Portrait</item>
+	</string-array>
+
+	<string-array name="auto_sync_client_entries">
+		<item>10 seconds</item>
+		<item>20 seconds</item>
+		<item>30 seconds</item>
+		<item>45 seconds</item>
+		<item>1 minute</item>
+	</string-array>
 </resources>

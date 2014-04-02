@@ -1,24 +1,30 @@
 package com.androidemu.nes;
 
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothServerSocket;
-import android.bluetooth.BluetoothSocket;
-import android.os.Handler;
-import android.os.Message;
 import java.io.InputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ProtocolException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.ByteBuffer;
-import java.util.Set;
+
 import java.util.UUID;
 
-public class NetPlayService {
+import android.annotation.TargetApi;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothServerSocket;
+import android.bluetooth.BluetoothSocket;
+
+import android.os.Build;
+import android.os.Handler;
+import android.os.Message;
+
+public class NetPlayService
+{
 
 	public static final int MESSAGE_CONNECTED = 1;
 	public static final int MESSAGE_DISCONNECTED = 2;
@@ -38,8 +44,8 @@ public class NetPlayService {
 	private static final short CMD_SAVED_STATE = 5;
 
 	private static final String BT_SERVICE_NAME = "Nesoid";
-	private static final UUID BT_SERVICE_UUID = UUID.fromString(
-			"8f996e39-374d-466c-bd0c-e0ced64b4e54");
+	private static final UUID BT_SERVICE_UUID = UUID
+			.fromString("8f996e39-374d-466c-bd0c-e0ced64b4e54");
 
 	private static final int MAX_SAVED_STATE_SIZE = 2 * 1024 * 1024;
 
@@ -55,12 +61,13 @@ public class NetPlayService {
 	private int remoteKeys;
 	private Object frameLock = new Object();
 
-	public NetPlayService(Handler h) {
+	public NetPlayService(Handler h)
+	{
 		handler = h;
 	}
 
-	public int tcpListen(InetAddress addr, int port)
-			throws IOException {
+	public int tcpListen(InetAddress addr, int port) throws IOException
+	{
 		isServer = true;
 
 		TCPServerThread t = new TCPServerThread(addr, port);
@@ -69,59 +76,70 @@ public class NetPlayService {
 		return port;
 	}
 
-	public void tcpConnect(InetAddress addr, int port) {
+	public void tcpConnect(InetAddress addr, int port)
+	{
 		isServer = false;
 		start(new TCPClientThread(addr, port));
 	}
 
-	public void bluetoothListen() throws IOException {
+	public void bluetoothListen() throws IOException
+	{
 		isServer = true;
 		start(new BluetoothServerThread());
 	}
 
-	public void bluetoothConnect(String address) throws IOException {
+	public void bluetoothConnect(String address) throws IOException
+	{
 		isServer = false;
 		start(new BluetoothClientThread(address));
 	}
 
-	public final boolean isServer() {
+	public final boolean isServer()
+	{
 		return isServer;
 	}
 
-	public final void setMaxFramesAhead(int max) {
-		synchronized (frameLock) {
+	public final void setMaxFramesAhead(int max)
+	{
+		synchronized (frameLock)
+		{
 			maxFramesAhead = max;
 			frameLock.notify();
 		}
 	}
 
-	public void disconnect() {
-		if (netThread == null)
-			return;
+	public void disconnect()
+	{
+		if (netThread == null) return;
 
 		netThread.interrupt();
 		netThread.cancel();
-		try {
+		try
+		{
 			netThread.join();
-		} catch (InterruptedException e) {}
+		}
+		catch (InterruptedException e)
+		{
+		}
 		netThread = null;
 		outputStream = null;
 	}
 
-	private void sendHello() throws IOException {
-		outputStream.writePacket(
-				createPacket(CMD_HELLO, 2).putShort(PROTO_VERSION));
+	private void sendHello() throws IOException
+	{
+		outputStream.writePacket(createPacket(CMD_HELLO, 2).putShort(PROTO_VERSION));
 	}
 
-	public int sendFrameUpdate(int keys)
-			throws IOException, InterruptedException {
+	public int sendFrameUpdate(int keys) throws IOException, InterruptedException
+	{
 
 		ByteBuffer p = createPacket(CMD_FRAME_UPDATE, 8);
 		p.putInt(localFrameCount);
 		p.putInt(keys);
 		outputStream.writePacket(p);
 
-		synchronized (frameLock) {
+		synchronized (frameLock)
+		{
 			localFrameCount++;
 			while (localFrameCount - remoteFrameCount > maxFramesAhead)
 				frameLock.wait();
@@ -129,140 +147,158 @@ public class NetPlayService {
 		}
 	}
 
-	public void sendPowerROM() throws IOException {
+	public void sendPowerROM() throws IOException
+	{
 		resetFrame();
 		outputStream.writePacket(createPacket(CMD_POWER_ROM));
 	}
 
-	public void sendResetROM() throws IOException {
+	public void sendResetROM() throws IOException
+	{
 		resetFrame();
 		outputStream.writePacket(createPacket(CMD_RESET_ROM));
 	}
 
-	public void sendSavedState(byte[] state) throws IOException {
+	public void sendSavedState(byte[] state) throws IOException
+	{
 		resetFrame();
-		outputStream.writePacket(
-				createPacket(CMD_SAVED_STATE, 4).putInt(state.length));
+		outputStream.writePacket(createPacket(CMD_SAVED_STATE, 4).putInt(state.length));
 		outputStream.writeBytes(state);
 	}
 
-	private void start(NetThread t) {
-		if (netThread != null)
-			throw new IllegalStateException();
+	private void start(NetThread t)
+	{
+		if (netThread != null) throw new IllegalStateException();
 
 		netThread = t;
 		netThread.start();
 	}
 
-	private void resetFrame() {
+	private void resetFrame()
+	{
 		localFrameCount = remoteFrameCount = 0;
 		remoteKeys = 0;
 	}
 
-	public synchronized void sendMessageReply() {
-		synchronized (this) {
-			if (waitOnMessage) {
+	public synchronized void sendMessageReply()
+	{
+		synchronized (this)
+		{
+			if (waitOnMessage)
+			{
 				waitOnMessage = false;
 				notify();
 			}
 		}
 	}
 
-	private void sendMessage(Message msg) {
+	private void sendMessage(Message msg)
+	{
 		msg.sendToTarget();
 
-		synchronized (this) {
+		synchronized (this)
+		{
 			waitOnMessage = true;
-			try {
+			try
+			{
 				while (waitOnMessage)
 					wait();
-			} catch (InterruptedException e) {
+			}
+			catch (InterruptedException e)
+			{
 				waitOnMessage = false;
 			}
 		}
 	}
 
-	private void manageConnection(InputStream in, OutputStream out)
-			throws IOException {
+	private void manageConnection(InputStream in, OutputStream out) throws IOException
+	{
 
 		inputStream = new PacketInputStream(in);
 		outputStream = new PacketOutputStream(out);
 		ByteBuffer p;
 
-		if (isServer) {
+		if (isServer)
+		{
 			p = inputStream.readPacket();
-			if (p.getShort() != CMD_HELLO)
-				throw new ProtocolException();
+			if (p.getShort() != CMD_HELLO) throw new ProtocolException();
 			handleHello(p);
-		} else {
+		}
+		else
+		{
 			sendHello();
 
 			p = inputStream.readPacket();
-			if (p.getShort() != CMD_SAVED_STATE)
-				throw new ProtocolException();
+			if (p.getShort() != CMD_SAVED_STATE) throw new ProtocolException();
 			handleSavedState(p);
 		}
 		sendMessage(handler.obtainMessage(MESSAGE_CONNECTED));
 
-		while ((p = inputStream.readPacket()) != null) {
-			switch (p.getShort()) {
-			case CMD_FRAME_UPDATE:
-				handleFrameUpdate(p);
-				break;
-			case CMD_POWER_ROM:
-				handlePowerROM(p);
-				break;
-			case CMD_RESET_ROM:
-				handleResetROM(p);
-				break;
-			case CMD_SAVED_STATE:
-				handleSavedState(p);
-				break;
-			default:
-				throw new ProtocolException();
+		while ((p = inputStream.readPacket()) != null)
+		{
+			switch (p.getShort())
+			{
+				case CMD_FRAME_UPDATE:
+					handleFrameUpdate(p);
+					break;
+				case CMD_POWER_ROM:
+					handlePowerROM(p);
+					break;
+				case CMD_RESET_ROM:
+					handleResetROM(p);
+					break;
+				case CMD_SAVED_STATE:
+					handleSavedState(p);
+					break;
+				default:
+					throw new ProtocolException();
 			}
 		}
 	}
 
-	private ByteBuffer createPacket(short cmd, int len) {
-		return PacketOutputStream.
-				createPacket(len + 2).putShort(cmd);
+	private ByteBuffer createPacket(short cmd, int len)
+	{
+		return PacketOutputStream.createPacket(len + 2).putShort(cmd);
 	}
 
-	private ByteBuffer createPacket(short cmd) {
+	private ByteBuffer createPacket(short cmd)
+	{
 		return createPacket(cmd, 0);
 	}
 
-	private void handleHello(ByteBuffer p) throws IOException {
-		if (p.getShort() != PROTO_VERSION)
-			throw new ProtocolException();
+	private void handleHello(ByteBuffer p) throws IOException
+	{
+		if (p.getShort() != PROTO_VERSION) throw new ProtocolException();
 	}
 
-	private void handleFrameUpdate(ByteBuffer p) {
+	private void handleFrameUpdate(ByteBuffer p)
+	{
 		final int frameCount = p.getInt();
 		final int keys = p.getInt();
 
-		synchronized (frameLock) {
+		synchronized (frameLock)
+		{
 			remoteKeys = keys;
-			if (++remoteFrameCount == localFrameCount)
-				frameLock.notify();
+			if (++remoteFrameCount == localFrameCount) frameLock.notify();
 		}
 	}
 
-	private void handlePowerROM(ByteBuffer p) {
+	private void handlePowerROM(ByteBuffer p)
+	{
 		sendMessage(handler.obtainMessage(MESSAGE_POWER_ROM));
 		resetFrame();
 	}
 
-	private void handleResetROM(ByteBuffer p) {
+	private void handleResetROM(ByteBuffer p)
+	{
 		sendMessage(handler.obtainMessage(MESSAGE_RESET_ROM));
 		resetFrame();
 	}
 
-	private void handleSavedState(ByteBuffer p) throws IOException {
+	private void handleSavedState(ByteBuffer p) throws IOException
+	{
 		final int len = p.getInt();
-		if (len <= 0 || len > MAX_SAVED_STATE_SIZE)
-			throw new IOException();
+		if (len <= 0 || len > MAX_SAVED_STATE_SIZE) throw new IOException();
 
 		byte buffer[] = new byte[len];
 		inputStream.readBytes(buffer);
@@ -270,198 +306,249 @@ public class NetPlayService {
 		resetFrame();
 	}
 
-	private abstract class NetThread extends Thread {
+	private abstract class NetThread extends Thread
+	{
 		public abstract void cancel();
+
 		protected abstract void runIO() throws IOException;
 
 		@Override
-		public void run() {
+		public void run()
+		{
 			int error = E_CONNECTION_CLOSED;
-			try {
+			try
+			{
 				runIO();
-			} catch (ProtocolException e) {
-				error = E_PROTOCOL_INCOMPATIBLE;
-			} catch (IOException e) {
-				if (outputStream == null)
-					error = E_CONNECT_FAILED;
 			}
-			handler.obtainMessage(MESSAGE_DISCONNECTED, error, 0).
-					sendToTarget();
+			catch (ProtocolException e)
+			{
+				error = E_PROTOCOL_INCOMPATIBLE;
+			}
+			catch (IOException e)
+			{
+				if (outputStream == null) error = E_CONNECT_FAILED;
+			}
+			handler.obtainMessage(MESSAGE_DISCONNECTED, error, 0).sendToTarget();
 		}
 	}
 
-	private class BluetoothServerThread extends NetThread {
+	@TargetApi(Build.VERSION_CODES.ECLAIR)
+	private class BluetoothServerThread extends NetThread
+	{
 		private BluetoothServerSocket serverSocket;
 		private BluetoothSocket socket;
 
-		public BluetoothServerThread() throws IOException {
+		public BluetoothServerThread() throws IOException
+		{
 			BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
-			serverSocket = adapter.listenUsingRfcommWithServiceRecord(
-					BT_SERVICE_NAME, BT_SERVICE_UUID);
+			serverSocket = adapter.listenUsingRfcommWithServiceRecord(BT_SERVICE_NAME,
+					BT_SERVICE_UUID);
 		}
 
 		@Override
-		protected void runIO() throws IOException {
+		protected void runIO() throws IOException
+		{
 			socket = serverSocket.accept();
 			serverSocket.close();
 
-			manageConnection(socket.getInputStream(),
-					socket.getOutputStream());
+			manageConnection(socket.getInputStream(), socket.getOutputStream());
 		}
 
 		@Override
-		public void cancel() {
-			try {
+		public void cancel()
+		{
+			try
+			{
 				serverSocket.close();
-			} catch (IOException e) {}
+			}
+			catch (IOException e)
+			{
+			}
 
-			try {
-				if (socket != null)
-					socket.close();
-			} catch (IOException e) {}
+			try
+			{
+				if (socket != null) socket.close();
+			}
+			catch (IOException e)
+			{
+			}
 		}
 	}
 
-	private class BluetoothClientThread extends NetThread {
+	@TargetApi(Build.VERSION_CODES.ECLAIR)
+	private class BluetoothClientThread extends NetThread
+	{
 		private BluetoothAdapter adapter;
 		private BluetoothSocket socket;
 
-		public BluetoothClientThread(String address)
-				throws IOException {
+		public BluetoothClientThread(String address) throws IOException
+		{
 			adapter = BluetoothAdapter.getDefaultAdapter();
 			BluetoothDevice device = adapter.getRemoteDevice(address);
 			socket = device.createRfcommSocketToServiceRecord(BT_SERVICE_UUID);
 		}
 
 		@Override
-		protected void runIO() throws IOException {
+		protected void runIO() throws IOException
+		{
 			adapter.cancelDiscovery();
 
 			socket.connect();
-			manageConnection(socket.getInputStream(),
-					socket.getOutputStream());
+			manageConnection(socket.getInputStream(), socket.getOutputStream());
 		}
 
 		@Override
-		public void cancel() {
-			try {
+		public void cancel()
+		{
+			try
+			{
 				socket.close();
-			} catch (IOException e) {}
+			}
+			catch (IOException e)
+			{
+			}
 		}
 	}
 
-	private class TCPServerThread extends NetThread {
+	private class TCPServerThread extends NetThread
+	{
 		private ServerSocket serverSocket;
 		private Socket socket;
 
-		public TCPServerThread(InetAddress addr, int port)
-				throws IOException {
-			try {
+		public TCPServerThread(InetAddress addr, int port) throws IOException
+		{
+			try
+			{
 				serverSocket = new ServerSocket(port, 1, addr);
-			} catch (IOException e) {
-				if (port == 0)
-					throw e;
+			}
+			catch (IOException e)
+			{
+				if (port == 0) throw e;
 			}
 			// fall back on any available port
-			if (serverSocket == null)
-				serverSocket = new ServerSocket(0, 1, addr);
+			if (serverSocket == null) serverSocket = new ServerSocket(0, 1, addr);
 		}
 
-		public int getLocalPort() {
+		public int getLocalPort()
+		{
 			return serverSocket.getLocalPort();
 		}
 
 		@Override
-		protected void runIO() throws IOException {
+		protected void runIO() throws IOException
+		{
 			socket = serverSocket.accept();
 			serverSocket.close();
 
-			manageConnection(socket.getInputStream(),
-					socket.getOutputStream());
+			manageConnection(socket.getInputStream(), socket.getOutputStream());
 		}
 
 		@Override
-		public void cancel() {
-			try {
+		public void cancel()
+		{
+			try
+			{
 				serverSocket.close();
-			} catch (IOException e) {}
+			}
+			catch (IOException e)
+			{
+			}
 
-			try {
-				if (socket != null)
-					socket.close();
-			} catch (IOException e) {}
+			try
+			{
+				if (socket != null) socket.close();
+			}
+			catch (IOException e)
+			{
+			}
 		}
 	}
 
-	private class TCPClientThread extends NetThread {
+	private class TCPClientThread extends NetThread
+	{
 		private InetSocketAddress socketAddr;
 		private Socket socket;
 
-		public TCPClientThread(InetAddress addr, int port) {
+		public TCPClientThread(InetAddress addr, int port)
+		{
 			socketAddr = new InetSocketAddress(addr, port);
 			socket = new Socket();
 		}
 
 		@Override
-		protected void runIO() throws IOException {
+		protected void runIO() throws IOException
+		{
 			socket.connect(socketAddr);
 			socketAddr = null;
 
-			manageConnection(socket.getInputStream(),
-					socket.getOutputStream());
+			manageConnection(socket.getInputStream(), socket.getOutputStream());
 		}
 
 		@Override
-		public void cancel() {
-			try {
+		public void cancel()
+		{
+			try
+			{
 				socket.close();
-			} catch (IOException e) {}
+			}
+			catch (IOException e)
+			{
+			}
 		}
 	}
 
-	private static class PacketInputStream {
+	private static class PacketInputStream
+	{
 		private final InputStream stream;
 		private final byte[] twoBytes = new byte[2];
 
-		public PacketInputStream(InputStream s) {
+		public PacketInputStream(InputStream s)
+		{
 			stream = s;
 		}
 
-		public ByteBuffer readPacket() throws IOException {
+		public ByteBuffer readPacket() throws IOException
+		{
 			readBytes(twoBytes);
 			int len = ((twoBytes[0] << 8) & 0xff00) | twoBytes[1];
 			byte[] buffer = new byte[len];
 			return ByteBuffer.wrap(readBytes(buffer));
 		}
 
-		public byte[] readBytes(byte[] buffer) throws IOException {
+		public byte[] readBytes(byte[] buffer) throws IOException
+		{
 			int bytes = 0;
-			while (bytes < buffer.length) {
+			while (bytes < buffer.length)
+			{
 				int n = stream.read(buffer, bytes, buffer.length - bytes);
-				if (n < 0)
-					throw new IOException();
+				if (n < 0) throw new IOException();
 				bytes += n;
 			}
 			return buffer;
 		}
 	}
 
-	private static class PacketOutputStream {
+	private static class PacketOutputStream
+	{
 		private OutputStream stream;
 
-		public static ByteBuffer createPacket(int len) {
+		public static ByteBuffer createPacket(int len)
+		{
 			return ByteBuffer.allocate(len + 2).putShort((short) len);
 		}
 
-		public PacketOutputStream(OutputStream out) {
+		public PacketOutputStream(OutputStream out)
+		{
 			stream = out;
 		}
 
-		public void writePacket(ByteBuffer buffer) throws IOException {
+		public void writePacket(ByteBuffer buffer) throws IOException
+		{
 			writeBytes(buffer.array());
 		}
 
-		public void writeBytes(byte[] buffer) throws IOException {
+		public void writeBytes(byte[] buffer) throws IOException
+		{
 			stream.write(buffer);
 			stream.flush();
 		}

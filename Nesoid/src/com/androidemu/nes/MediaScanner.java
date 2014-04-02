@@ -4,35 +4,39 @@ import android.content.Context;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 
-public class MediaScanner implements
-		MediaScannerConnection.MediaScannerConnectionClient {
+public class MediaScanner implements MediaScannerConnection.MediaScannerConnectionClient
+{
 
 	private MediaScannerConnection conn;
 	private String filePath;
 	private String mimeType;
 
-	public MediaScanner(Context context) {
+	public MediaScanner(Context context)
+	{
 		conn = new MediaScannerConnection(context, this);
 		conn.connect();
 	}
 
-	public void scanFile(String path, String mime) {
+	public void scanFile(String path, String mime)
+	{
 		if (conn.isConnected())
 			conn.scanFile(path, mime);
-		else {
+		else
+		{
 			filePath = path;
 			mimeType = mime;
 		}
 	}
 
-	public void onMediaScannerConnected() {
-		if (filePath != null)
-			conn.scanFile(filePath, mimeType);
+	public void onMediaScannerConnected()
+	{
+		if (filePath != null) conn.scanFile(filePath, mimeType);
 
 		filePath = null;
 		mimeType = null;
 	}
 
-	public void onScanCompleted(String path, Uri uri) {
+	public void onScanCompleted(String path, Uri uri)
+	{
 	}
 }
